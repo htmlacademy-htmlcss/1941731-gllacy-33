@@ -65,10 +65,10 @@
               <a class="breadcrumbs-link" href="index.html">Главная</a>
            </li>
            <li class="breadcrumbs-item">
-             <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
+            <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
             </li>
             <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" >Сливочное</a>
+                <span class="breadcrumbs-link" >Сливочное</span>
             </li>
        </ul>
    </header> 
@@ -79,7 +79,9 @@
             <option value="popular">По популярности</option>
             <option value="cheap">Сначала дешёвое</option>
             <option value="expensive">Сначала дорогое</option>
-          </select>
+        </select>
+        <p>Цена: 100 ₽-500 ₽</p>
+        <input name="range" id="price-range" type="range" min="0" max="800" value="500" step="1">
         <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Жирность</legend>
             <label class="control">
@@ -126,10 +128,10 @@
         <button class="button" type="submit">Применить</button>
     </form>
     
-    <ul class="catalog-first-row catalog-row">
+    <ul class="catalog-list">
      
     <li class="product-card">
-        <a class="product-card-link" href="product.html">
+        <a class="product-card-link" href="#">
             <img class="product-card-image" src="" alt="">
             <h3 class="product-card-title">Малинка</h3>    
         </a>
@@ -138,7 +140,7 @@
         <a class="button product-card-button" href="#">Купить</a> 
     </li>
     <li class="product-card">
-        <a class="product-card-link" href="product.html">
+        <a class="product-card-link" href="#">
             <img class="product-card-image" src="" alt="">
             <h3 class="product-card-title">Фисташка</h3>    
         </a>
@@ -147,7 +149,7 @@
         <a class="button product-card-button" href="#">Купить</a> 
     </li>
     <li class="product-card">
-        <a class="product-card-link" href="product.html">
+        <a class="product-card-link" href="#">
             <img class="product-card-image" src="" alt="">
             <h3 class="product-card-title">Черника</h3>    
         </a>
@@ -156,7 +158,7 @@
         <a class="button product-card-button" href="#">Купить</a> 
     </li>
     <li class="product-card">
-        <a class="product-card-link" href="product.html">
+        <a class="product-card-link" href="#">
             <img class="product-card-image" src="" alt="">
             <h3 class="product-card-title">Бабл-гам</h3>    
         </a>
@@ -164,12 +166,10 @@
         <b class="product-card-price">320 ₽/кг</b>
         <a class="button product-card-button" href="#">Купить</a> 
     </li>
-</ul>
 
-    <ul class="catalog-second-row catalog-row">
-     
+
         <li class="product-card">
-            <a class="product-card-link" href="product.html">
+            <a class="product-card-link" href="#">
                 <img class="product-card-image" src="" alt="">
                 <h3 class="product-card-title">Ежевика</h3>    
             </a>
@@ -178,7 +178,7 @@
             <a class="button product-card-button" href="#">Купить</a> 
         </li>
         <li class="product-card">
-            <a class="product-card-link" href="product.html">
+            <a class="product-card-link" href="#">
                 <img class="product-card-image" src="" alt="">
                 <h3 class="product-card-title">Банан</h3>    
             </a>
@@ -187,7 +187,7 @@
             <a class="button product-card-button" href="#">Купить</a> 
         </li>
         <li class="product-card">
-            <a class="product-card-link" href="product.html">
+            <a class="product-card-link" href="#">
                 <img class="product-card-image" src="" alt="">
                 <h3 class="product-card-title">Шоколадка</h3>    
             </a>
@@ -196,7 +196,7 @@
             <a class="button product-card-button" href="#">Купить</a> 
         </li>
         <li class="product-card">
-            <a class="product-card-link" href="product.html">
+            <a class="product-card-link" href="#">
                 <img class="product-card-image" src="" alt="">
                 <h3 class="product-card-title">Клубничка</h3>    
             </a>
@@ -204,12 +204,9 @@
             <b class="product-card-price">300 ₽/кг</b>
             <a class="button product-card-button" href="#">Купить</a> 
         </li>
-    </ul>
-
-        <ul class="catalog-third-row catalog-row">
-            
+  
             <li class="product-card">
-                <a class="product-card-link" href="product.html">
+                <a class="product-card-link" href="#">
                     <img class="product-card-image" src="" alt="">
                     <h3 class="product-card-title">Лимон</h3>    
                 </a>
@@ -218,7 +215,7 @@
                 <a class="button product-card-button" href="#">Купить</a> 
             </li>
             <li class="product-card">
-                <a class="product-card-link" href="product.html">
+                <a class="product-card-link" href="#">
                     <img class="product-card-image" src="" alt="">
                     <h3 class="product-card-title">Ментол</h3>    
                 </a>
@@ -227,7 +224,7 @@
                 <a class="button product-card-button" href="#">Купить</a> 
             </li>
             <li class="product-card">
-                <a class="product-card-link" href="product.html">
+                <a class="product-card-link" href="#">
                     <img class="product-card-image" src="" alt="">
                     <h3 class="product-card-title">Орешек</h3>    
                 </a>
@@ -236,7 +233,7 @@
                 <a class="button product-card-button" href="#">Купить</a> 
             </li>
             <li class="product-card">
-                <a class="product-card-link" href="product.html">
+                <a class="product-card-link" href="#">
                     <img class="product-card-image" src="" alt="">
                     <h3 class="product-card-title">Крем-брюле</h3>    
                 </a>
@@ -336,9 +333,8 @@
         <a href="https://htmlacademy.ru/"><img class="academy-logo" src="" alt="логотип Академии"></a>
         <figcaption>Сделано в <a href="https://htmlacademy.ru/">.html academy</a> © 2021</figcaption>
       </figure>
-      
-
     </section>
   </footer>
   </body>
 </html>
+
