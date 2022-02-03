@@ -24,13 +24,14 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   background-color: #feafc3;
   color: #2d3440;
 }
 button {
+  font-size: 16px;
   line-height: 20px;
   text-align: center;
   font-weight: 700;
@@ -43,6 +44,11 @@ button {
   border: 4px solid rgba(255, 47, 100, 0.3);
   border-radius: 26px;
 }
+input {
+  font-size: 16px;
+  line-height: 20px;
+  color: #b9b9b9;
+}
 header {
   line-height: 20px;
 }
@@ -51,6 +57,7 @@ header {
 }
 .navigation-phone {
   font-weight: 700;
+  font-size: 16px;
 }
 h2 {
   line-height: 46px;
@@ -76,6 +83,7 @@ h4 {
 .product-description {
   line-height: 24px;
   color: #565c66;
+  font-size: 18px;
 }
 
 .product-card p {
@@ -83,6 +91,10 @@ h4 {
 }
 .product-card b {
   font-weight: 700;
+}
+.product-card-price {
+  line-height: 24px;
+  font-size: 20px;
 }
 p {
   color: #565c66;
@@ -127,24 +139,28 @@ a {
   border-radius: 16px;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-color: #fcfcfc;
 }
 .news {
   background-image: url("../images/background_news.jpg");
   border-radius: 16px;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-color: #fcfcfc;
 }
 .subscription {
   background-image: url("../images/email_background.jpg");
   border-radius: 16px;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-color: #fcfcfc;
 }
 .delivery {
   background-image: url("../images/delivery_background.jpg");
   border-radius: 16px;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-color: #fcfcfc;
 }
 .banners-item {
   background: #ff7799;
@@ -152,4 +168,8 @@ a {
 }
 .product-card-image {
   border-radius: 50%;
+}
+.feedback-annotation {
+  font-size: 14px;
+  line-height: 20px;
 }
