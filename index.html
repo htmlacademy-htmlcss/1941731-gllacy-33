@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+     
+    <link rel="stylesheet" href="styles/styles.css">
+  
   </head>
  
   <body class="first-slide">
     <header class="page-header">
-    <img src="" alt="Логотип «Глейси»" class="logo-main"> 
+    <img src="images/logo.svg" width="137" height="56" alt="Логотип «Глейси»" class="logo-main"> 
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -16,12 +19,12 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="delivery.html">
+          <a class="navigation-link" href="#">
             Доставка и оплата
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="about.html">
+          <a class="navigation-link" href="#">
             О компании
           </a>
         </li>
@@ -83,7 +86,10 @@
     </section>
     <section class="gallery">
       <h2 class="gallery-title visually-hidden">Фотогалерея</h2>
-      <img class="slider-image" src="" alt="Фото мороженого.">
+      <img class="slider-image" width="306" height="507" src="images/ice_cream_strawberry_jam_full.png" alt="Фото мороженого, основной слайд">
+      <img class="slider-image-incactive" width="66" height="150" src="images/ice_cream_banana_full.png" alt="неактивный слайд">
+      <img class="slider-image-incactive" width="66" height="150" src="images/ice_cream_caramel_marshmallows_full.png" alt="неактивный слайд">
+
       <button class="slider-button slider-prev" type="button">
         <span class="visually-hidden">Предыдущее фото</span>
       </button>
@@ -147,15 +153,15 @@
       <ul class="banners-list">
         <li class="banners-item">
           <h4 class="banners-item-name">Малинка даром!</h4>
-          <p class="banners-item-description">При При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <p class="banners-item-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <button class="banners-button">Хочу подарок</button>
-          <img class="banner-image" src="" alt="Малинка баннер">
+          <img class="banner-image" src="images/raspberries_photo.png" alt="Малинка баннер">
         </li>
         <li class="banners-item">
           <h4 class="banners-item-name">Маршмеллоу даром!</h4>
           <p class="banners-item-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
           <button class="banners-button">Хочу подарок</button>
-          <img class="banner-image" src="" alt="Маршмеллоу">
+          <img class="banner-image" src="images/marshmallow_photo.png" alt="Маршмеллоу">
           
         </li>
       </ul>
@@ -164,21 +170,21 @@
       <h2 class="popular-products-name">Попробуйте самые популярные вкусы нашего мороженого</h2>
       <ul class="popular-products-list">
         <li class="popular-products-item">
-          <img class="raspberries-image" src="" alt="Малинка мороженое">
+          <img class="raspberries-image" width="168" height="168" src="images/ice_cream_raspberries.jpg" alt="Малинка мороженое">
           <h4>Малинка</h4>
           <span class="popular-products-description">Сливочное мороженое с малиновым джемом</span>
           <b class="product-price">310 ₽/кг</b>
           <button class="button-add-to-shopping-cart" type="button">Добавить в корзину</button>
         </li>
         <li class="popular-products-item">
-          <img class="raspberries-image" src="" alt="Фисташка мороженое">
+          <img class="pistache-image" width="168" height="168" src="images/ice_cream_pistache.jpg" alt="Фисташка мороженое">
           <h4>Малинка</h4>
           <span class="popular-products-description">Фисташковый пломбир с кусочками шоколада</span>
           <b class="product-price">340 ₽/кг</b>
           <button class="button-add-to-shopping-cart" type="button">Добавить в корзину</button>
         </li>
         <li class="popular-products-item">
-          <img class="raspberries-image" src="" alt="Черника мороженое">
+          <img class="blueberry-image" width="168" height="168" src="images/ice_cream_blueberry.jpg" alt="Черника мороженое">
           <h4>Черника</h4>
           <span class="popular-products-description">Крем-брюле
             с черничным джемом</span>
@@ -186,7 +192,7 @@
             <button class="button-add-to-shopping-cart" type="button">Добавить в корзину</button>
           </li>
         <li class="popular-products-item">
-          <img class="raspberries-image" src="" alt="Бабл-гам мороженое">
+          <img class="bubble-gum-image" width="168" height="168" src="images/ice_cream_bubble_gum.jpg" alt="Бабл-гам мороженое">
           <h4>Бабл-гам</h4>
           <span class="popular-products-description">Ванильный пломбир
             со сладкой посыпкой</span>
@@ -200,25 +206,25 @@
       <h2 class="seo-name">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h2>
       <ul class="seo-list">
         <li class="seo-item">
-          <img class="seo-list-icecream" src="" alt="Мороженое">
+          <img class="seo-list-icecream" src="images/ice_cream_icon.svg" alt="Мороженое">
           <p>Всё наше мороженое изготавливается на собственном 
             производстве с использованием современного оборудования и проверенных
              временем технологий.</p>
         </li>
         <li class="seo-item">
-          <img class="seo-list-leaf" src="" alt="Листик">
+          <img class="seo-list-leaf" src="images/leaf_icon.svg" alt="Листик">
           <p>Для приготовления мороженого используются сливки и 
             молоко высочайшего качества. Все ингредиенты
             и добавки произведены из натурального сырья.</p>
         </li>
         <li class="seo-item">
-          <img class="seo-list-cow" src="" alt="Корова">
+          <img class="seo-list-cow" src="images/cow_icon.svg" alt="Корова">
           <p>Закупка ингредиентов производится только
             у проверенных фермерских хозяйств, с которыми
             нас связывает долговременное сотрудничество.</p>
         </li>
         <li class="seo-item">
-          <img class="seo-list-thermometer" src="" alt="Градусник">
+          <img class="seo-list-thermometer" src="images/thermometer_icon.svg" alt="Градусник">
           <p>Доставка нашего мороженого осуществляется в специальном термопаке, 
             который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
         </li>
@@ -333,7 +339,7 @@
     <section class="made-by-academy">
       <h2 class="visually-hidden">Информация о разработчике</h2>
       <figure>
-        <a href="https://htmlacademy.ru/"><img class="academy-logo" src="" alt="логотип Академии"></a>
+        <a href="https://htmlacademy.ru/"><img class="academy-logo" src="images/logo_htmlacademy.svg" alt="логотип Академии"></a>
         <figcaption>Сделано в <a href="https://htmlacademy.ru/">.html academy</a> © 2021</figcaption>
       </figure>
       
