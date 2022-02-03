@@ -28,4 +28,128 @@ body {
   font-size: 16px;
   line-height: 22px;
   background-color: #feafc3;
+  color: #2d3440;
+}
+button {
+  line-height: 20px;
+  text-align: center;
+  font-weight: 700;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  border-radius: 26px;
+}
+.button-light {
+  color: #fcfcfc;
+  background-color: #ff2f64;
+  border: 4px solid rgba(255, 47, 100, 0.3);
+  border-radius: 26px;
+}
+header {
+  line-height: 20px;
+}
+.user-interface {
+  font-size: 14px;
+}
+.navigation-phone {
+  font-weight: 700;
+}
+h2 {
+  line-height: 46px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 32px;
+}
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.product-name {
+  font-weight: 900;
+  font-size: 36px;
+  text-align: start;
+}
+.product-description {
+  line-height: 24px;
+  color: #565c66;
+}
+
+.product-card p {
+  text-align: center;
+}
+.product-card b {
+  font-weight: 700;
+}
+p {
+  color: #565c66;
+}
+.delivery-form label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d3440;
+}
+footer .navigation {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+}
+.for-suppliers {
+  font-weight: 700;
+}
+.made-by-academy {
+  font-size: 12px;
+  line-height: 16px;
+}
+.breedcrumbs {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+.catalog-filter {
+  font-size: 14px;
+  line-height: 20px;
+}
+.pagination-catalog {
+  font-size: 16px;
+  line-height: 20px;
+}
+a {
+  color: #2d3440;
+  text-decoration: none;
+}
+.seo {
+  background-image: url("../images/waffle_background.jpg");
+  border-radius: 16px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.news {
+  background-image: url("../images/background_news.jpg");
+  border-radius: 16px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.subscription {
+  background-image: url("../images/email_background.jpg");
+  border-radius: 16px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.delivery {
+  background-image: url("../images/delivery_background.jpg");
+  border-radius: 16px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.banners-item {
+  background: #ff7799;
+  border-radius: 16px;
+}
+.product-card-image {
+  border-radius: 50%;
 }
