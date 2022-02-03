@@ -32,28 +32,28 @@
 
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a class="navigation-link" href="tel:88005558628">
+          <a class="navigation-link navigation-phone" href="tel:88005558628">
             +7 800 555-86-28
           </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <span class="visually-hidden">
+            <span class="visually-hidden user-interface">
               Поиск
             </span>
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden">
+          <a class="navigation-link user-interface" href="#">
+            <span>
               Вход
             </span>
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden">
-              Корзина
+          <a class="navigation-link user-interface" href="#">
+            <span>
+              Пусто
             </span>
           </a>
         </li>
@@ -152,13 +152,13 @@
       <h2 class="banners-name">Заказывайте мороженое и получайте подарки!</h2>
       <ul class="banners-list">
         <li class="banners-item">
-          <h4 class="banners-item-name">Малинка даром!</h4>
+          <h3 class="banners-item-name">Малинка даром!</h3>
           <p class="banners-item-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <button class="banners-button">Хочу подарок</button>
           <img class="banner-image" src="images/raspberries_photo.png" alt="Малинка баннер">
         </li>
         <li class="banners-item">
-          <h4 class="banners-item-name">Маршмеллоу даром!</h4>
+          <h3 class="banners-item-name">Маршмеллоу даром!</h3>
           <p class="banners-item-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
           <button class="banners-button">Хочу подарок</button>
           <img class="banner-image" src="images/marshmallow_photo.png" alt="Маршмеллоу">
@@ -168,38 +168,44 @@
     </section>
     <section class="popular-products">
       <h2 class="popular-products-name">Попробуйте самые популярные вкусы нашего мороженого</h2>
-      <ul class="popular-products-list">
-        <li class="popular-products-item">
-          <img class="raspberries-image" width="168" height="168" src="images/ice_cream_raspberries.jpg" alt="Малинка мороженое">
-          <h4>Малинка</h4>
-          <span class="popular-products-description">Сливочное мороженое с малиновым джемом</span>
-          <b class="product-price">310 ₽/кг</b>
-          <button class="button-add-to-shopping-cart" type="button">Добавить в корзину</button>
+      <ul class="catalog-list">
+     
+        <li class="product-card">
+            <a class="product-card-link" href="#">
+                <img class="product-card-image" height="168" width="168" src="images/ice_cream_raspberries.jpg" alt="Мороженое малинка">
+                <h4 class="product-card-title">Малинка</h4>    
+            </a>
+            <p>Сливочное мороженое с малиновым джемом</p>
+            <b class="product-card-price">310 ₽/кг</b>
+            <button class="button-add-to-shopping-cart" type="button">Добавить в корзину</button> 
         </li>
-        <li class="popular-products-item">
-          <img class="pistache-image" width="168" height="168" src="images/ice_cream_pistache.jpg" alt="Фисташка мороженое">
-          <h4>Малинка</h4>
-          <span class="popular-products-description">Фисташковый пломбир с кусочками шоколада</span>
-          <b class="product-price">340 ₽/кг</b>
-          <button class="button-add-to-shopping-cart" type="button">Добавить в корзину</button>
-        </li>
-        <li class="popular-products-item">
-          <img class="blueberry-image" width="168" height="168" src="images/ice_cream_blueberry.jpg" alt="Черника мороженое">
-          <h4>Черника</h4>
-          <span class="popular-products-description">Крем-брюле
-            с черничным джемом</span>
-            <b class="product-price">330 ₽/кг</b>
-            <button class="button-add-to-shopping-cart" type="button">Добавить в корзину</button>
-          </li>
-        <li class="popular-products-item">
-          <img class="bubble-gum-image" width="168" height="168" src="images/ice_cream_bubble_gum.jpg" alt="Бабл-гам мороженое">
-          <h4>Бабл-гам</h4>
-          <span class="popular-products-description">Ванильный пломбир
-            со сладкой посыпкой</span>
-            <b class="product-price">320 ₽/кг</b>
+        <li class="product-card">
+            <a class="product-card-link" href="#">
+                <img class="product-card-image" height="168" width="168" src="images/ice_cream_pistache.jpg" alt="Мороженое фисташка">
+                <h4 class="product-card-title">Фисташка</h4>    
+            </a>
+            <p>Фисташковый пломбир с кусочками шоколада</p>
+            <b class="product-card-price">340 ₽/кг</b>
             <button class="button-add-to-shopping-cart" type="button">Добавить в корзину</button>
         </li>
-      </ul>
+        <li class="product-card">
+            <a class="product-card-link" href="#">
+                <img class="product-card-image" height="168" width="168" src="images/ice_cream_blueberry.jpg" alt="Мороженое черника">
+                <h4 class="product-card-title">Черника</h4>    
+            </a>
+            <p>Крем-брюле с черничным джемом</p>
+            <b class="product-card-price">330 ₽/кг</b>
+            <button class="button-add-to-shopping-cart" type="button">Добавить в корзину</button>
+        </li>
+        <li class="product-card">
+            <a class="product-card-link" href="#">
+                <img class="product-card-image" height="168" width="168" src="images/ice_cream_bubble_gum.jpg" alt="Мороженое Бабл-гам">
+                <h4 class="product-card-title">Бабл-гам</h4>    
+            </a>
+            <p>Ванильный пломбир со сладкой посыпкой</p>
+            <b class="product-card-price">320 ₽/кг</b>
+            <button class="button-add-to-shopping-cart" type="button">Добавить в корзину</button>
+        </li>
     </section>
     <section class="seo">
       
@@ -232,8 +238,8 @@
     </section>
     <section class="news">
       
-      <p class="news-description">Новое в нашем блоге</p>
       <h2 class="visually-hidden">Новости</h2>
+      <p class="news-description">Новое в нашем блоге</p>
       <h3 class="news-name">10 способов сервировки фруктовых щербетов к столу</h3>
     </section>
     <section class="subscription">
@@ -244,7 +250,7 @@
         не спамить и не слать всякой ненужной ерунды. Честно =)</p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
         <input type="email" id="subcscription-email" name="subcscription-email" placeholder="email@example.com">
-        <button class="subcription-form" type="submit">Отправить</button>
+        <button class="subcription-form button-light" type="submit">Отправить</button>
       </form>
     </section>
     <section class="delivery">
@@ -253,6 +259,7 @@
       <p>Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? 
         Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
       <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
         <p class="delivery-form-date>">
           <label for="delivery-date">Дата</label>
           <input type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
@@ -266,20 +273,20 @@
           <label for="delivery-address">Адрес</label>
           <input type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
         </p>
-          <button class="delivery-form" type="submit">Отправить</button>
+          <button class="delivery-form button-light" type="submit">Отправить</button>
 
       </form>
     </section>
     <section class="feedback">
       
       <h2 class="visually-hidden">Обратная связь</h2>
-      <h3 class="feedback-subtitle">Адрес главного офиса и офлайн-магазина:</h3>
-      <p class="feedback-adress-text">наб. реки Карповки, <br>5 лит П, Санкт-Петербург</p>
-      <h3 class="feedback-subtitle">Для заказов по телефону:</h3>
+      <p class="feedback-subtitle">Адрес главного офиса и офлайн-магазина:</p>
+      <h4 class="feedback-adress-text">наб. реки Карповки, <br>5 лит П, Санкт-Петербург</h4>
+      <p class="feedback-subtitle">Для заказов по телефону:</p>
       
-      <a class="feedback-phone" href="tel:88005558628">+7 (812) 812-12-12</a>
+      <a class="feedback-phone" href="tel:88005558628"><h4>+7 (812) 812-12-12<h4></h4></a>
       <p class="feedback-annotation"> (с 10 до 20 ежедневно)</p>
-      <button class="feedback-form" type="button">Форма обратной связи</button>
+      <button class="feedback-form button-light" type="button">Форма обратной связи</button>
 
     </section>
    
@@ -336,11 +343,11 @@
         </li>
       </ul>
     </nav>
-    <section class="made-by-academy">
+    <section class="made-by">
       <h2 class="visually-hidden">Информация о разработчике</h2>
       <figure>
         <a href="https://htmlacademy.ru/"><img class="academy-logo" src="images/logo_htmlacademy.svg" alt="логотип Академии"></a>
-        <figcaption>Сделано в <a href="https://htmlacademy.ru/">.html academy</a> © 2021</figcaption>
+        <figcaption class="made-by-academy">Сделано в <a href="https://htmlacademy.ru/">.html academy</a> © 2021</figcaption>
       </figure>
       
 
