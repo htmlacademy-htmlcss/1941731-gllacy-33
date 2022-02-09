@@ -10,8 +10,9 @@
  
   <body class="first-slide">
     <header class="page-header">
-    <img src="images/logo.svg" width="137" height="56" alt="Логотип «Глейси»" class="logo-main"> 
+     
     <nav class="navigation">
+      <img src="images/logo.svg" width="137" height="56" alt="Логотип «Глейси»" class="logo-main">
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">
@@ -38,7 +39,7 @@
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <span class="visually-hidden user-interface">
+            <span class="user-interface">
               Поиск
             </span>
           </a>
@@ -60,7 +61,8 @@
       </ul>
     </nav>
   </header>
-  <main class="main-index">
+  <main class="main-container main-index">
+    <div class="page-container">
     <h1 class="visually-hidden">Интернет-магазин мороженого «Глейси»</h1>
     <section class="slider">
       <h2 class="visually-hidden">Слайдер</h2>
@@ -86,64 +88,44 @@
     </section>
     <section class="gallery">
       <h2 class="gallery-title visually-hidden">Фотогалерея</h2>
+      <button class="slider-button slider-prev" type="button">
+        <img src="images/arrow_left_inactive.svg">
+      </button>
       <img class="slider-image" width="306" height="507" src="images/ice_cream_strawberry_jam_full.png" alt="Фото мороженого, основной слайд">
+      <button class="slider-button slider-next" type="button">
+        <img src="images/arrow_right_inactive.svg">
+      </button>
       <img class="slider-image-incactive" width="66" height="150" src="images/ice_cream_banana_full.png" alt="неактивный слайд">
       <img class="slider-image-incactive" width="66" height="150" src="images/ice_cream_caramel_marshmallows_full.png" alt="неактивный слайд">
 
-      <button class="slider-button slider-prev" type="button">
-        <span class="visually-hidden">Предыдущее фото</span>
-      </button>
-      <button class="slider-button slider-next" type="button">
-        <span class="visually-hidden">Следущее фото</span>
-      </button>
+      
+    
 
-      <ol class="slider-pagination">
-        <li class="slider-pagination-item">
-          <button class="slider-pagination-button slider-pagination-button-current">
-            <span class="visually-hidden">1 фото</span>
-          </button>
-        </li>
-        <li class="slider-pagination-item">
-          <button class="slider-pagination-button slider-pagination-button-current">
-            <span class="visually-hidden">2 фото</span>
-          </button>
-        </li>
-        <li class="slider-pagination-item">
-          <button class="slider-pagination-button slider-pagination-button-current">
-            <span class="visually-hidden">3 фото</span>
-          </button>
-        </li>
-      </ol>
+
     </section>
     <section class="dot-pagination">
       <h2 class="visually-hidden">Точечная пагинация</h2>
-      <button type="button" name="dot-pagination" class="dot-pagination-first dot-pagination-button">1 слайд</button>
-      <button type="button" name="dot-pagination" class="dot-pagination-second dot-pagination-button">2 слайд</button>
-      <button type="button" name="dot-pagination" class="dot-pagination-third dot-pagination-button">3 слайд</button>
+      <button type="button" name="dot-pagination" class="dot-pagination-first dot-pagination-button"></button>
+      <button type="button" name="dot-pagination" class="dot-pagination-second dot-pagination-button"></button>
+      <button type="button" name="dot-pagination" class="dot-pagination-third dot-pagination-button"></button>
     </section>
     <section class="social-networks">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social-networks-list">
         <li class="social-networks-item">
-          <a class="social-networks-link" href="#">
-            <span class="visually-hidden">
-              Вконтакте
-            </span>
-          </a>
+          
+            <img class="social-networks-link"  src="images/VK.svg" href="https://vk.com/htmlacademy" alt="VK">
+          
         </li>
         <li class="social-networks-item">
-          <a class="social-networks-link" href="#">
-            <span class="visually-hidden">
-              Фейсбук
-            </span>
-          </a>
+          
+            <img class="social-networks-link"  src="images/Facebook.svg"href="https://www.facebook.com/htmlacademy"  alt="Facebook">
+          
         </li>
         <li class="social-networks-item">
-          <a class="social-networks-link" href="#">
-            <span class="visually-hidden">
-              Инстаграм
-            </span>
-          </a>
+          
+            <img class="social-networks-link"  src="images/insta.svg" href="https://www.instagram.com/htmlacademy/" alt="instagram">
+         
         </li>
       </ul>
     </section>
@@ -177,7 +159,7 @@
             </a>
             <p>Сливочное мороженое с малиновым джемом</p>
             <b class="product-card-price">310 ₽/кг</b>
-            <button class="button-add-to-shopping-cart" type="button">Добавить в корзину</button> 
+            <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg"></button> 
         </li>
         <li class="product-card">
             <a class="product-card-link" href="#">
@@ -186,7 +168,7 @@
             </a>
             <p>Фисташковый пломбир с кусочками шоколада</p>
             <b class="product-card-price">340 ₽/кг</b>
-            <button class="button-add-to-shopping-cart" type="button">Добавить в корзину</button>
+            <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg"></button>
         </li>
         <li class="product-card">
             <a class="product-card-link" href="#">
@@ -195,7 +177,7 @@
             </a>
             <p>Крем-брюле с черничным джемом</p>
             <b class="product-card-price">330 ₽/кг</b>
-            <button class="button-add-to-shopping-cart" type="button">Добавить в корзину</button>
+            <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg"></button>
         </li>
         <li class="product-card">
             <a class="product-card-link" href="#">
@@ -204,7 +186,7 @@
             </a>
             <p>Ванильный пломбир со сладкой посыпкой</p>
             <b class="product-card-price">320 ₽/кг</b>
-            <button class="button-add-to-shopping-cart" type="button">Добавить в корзину</button>
+            <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg"></button>
         </li>
     </section>
     <section class="seo">
@@ -236,6 +218,7 @@
         </li>
       </ul>
     </section>
+    <div class="news_subscription">
     <section class="news">
       
       <h2 class="visually-hidden">Новости</h2>
@@ -253,6 +236,7 @@
         <button class="subcription-form button-light" type="submit">Отправить</button>
       </form>
     </section>
+    </div>
     <section class="delivery">
       
       <h2>Доставка любимого мороженого на дом</h2>
@@ -289,33 +273,28 @@
       <button class="feedback-form button-light" type="button">Форма обратной связи</button>
 
     </section>
-   
+  </div> 
   </main>
 
   <footer class="page-footer">
+    <div class="page-footer-container">
     <section class="social-networks">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social-networks-list">
         <li class="social-networks-item">
-          <a class="social-networks-link" href="#">
-            <span class="visually-hidden">
-              Вконтакте
-            </span>
-          </a>
+          
+            <img class="social-networks-link"  src="images/VK.svg" href="https://vk.com/htmlacademy" alt="VK">
+          
         </li>
         <li class="social-networks-item">
-          <a class="social-networks-link" href="#">
-            <span class="visually-hidden">
-              Фейсбук
-            </span>
-          </a>
+          
+            <img class="social-networks-link"  src="images/Facebook.svg"href="https://www.facebook.com/htmlacademy"  alt="Facebook">
+          
         </li>
         <li class="social-networks-item">
-          <a class="social-networks-link" href="#">
-            <span class="visually-hidden">
-              Инстаграм
-            </span>
-          </a>
+          
+            <img class="social-networks-link"  src="images/insta.svg" href="https://www.instagram.com/htmlacademy/" alt="instagram">
+         
         </li>
       </ul>
     </section>
@@ -352,6 +331,8 @@
       
 
     </section>
+  </div>
   </footer>
   </body>
 </html>
+
