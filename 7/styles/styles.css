@@ -68,9 +68,7 @@ header {
 }
 .navigation {
   display: flex;
-  width: 1170px;
   height: 104px;
-  margin: 0 auto;
 }
 .navigation-list {
   width: 400px;
@@ -150,17 +148,20 @@ header {
   margin: 0;
   width: 104px;
 }
+.social-networks-footer {
+  width: 104px;
+
+  margin-right: auto;
+}
 .made-by {
   width: 193px;
+  margin-left: auto;
+  margin-top: auto;
 }
 .navigation-footer {
   width: 356px;
 }
-.banners {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+
 .banners-list {
   padding: 0;
   margin: 0;
@@ -174,11 +175,6 @@ header {
   background: #ff7799;
   border-radius: 16px;
 }
-.popular-products {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
 .catalog-list li {
   display: inline-block;
 }
@@ -190,11 +186,7 @@ header {
 .product-card:nth-child(n + 4) {
   margin-top: 40px;
 }
-.seo {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+
 .seo-list li {
   display: inline-block;
 }
@@ -272,6 +264,7 @@ p {
 }
 .page-footer-container {
   display: flex;
+  justify-content: space-between;
   width: 1170px;
   margin: 0 auto;
 }
@@ -287,14 +280,26 @@ footer .navigation {
   font-size: 12px;
   line-height: 16px;
 }
-.breedcrumbs {
+.breadcrumbs-link {
+  text-decoration: underline;
+}
+.breadcrumbs li {
+  display: inline-block;
+}
+.breadcrumbs {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 249px;
 }
 .catalog-filter {
   font-size: 14px;
   line-height: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 807px;
 }
 
 a {
