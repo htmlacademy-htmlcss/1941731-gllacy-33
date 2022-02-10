@@ -23,7 +23,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -31,7 +39,7 @@ body {
   color: #2d3440;
 }
 button {
-   font-family: "Inter";
+  font-family: "Inter";
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -53,6 +61,162 @@ input {
 }
 header {
   line-height: 20px;
+}
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+.navigation {
+  display: flex;
+  height: 104px;
+}
+.navigation-list {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+}
+.navigation-user {
+  width: 567px;
+  margin-left: auto;
+}
+.logo-main {
+  width: 137px;
+  margin: 0 auto;
+}
+.main-container {
+  flex-grow: 1;
+}
+.slider {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.product-name {
+  font-weight: 900;
+  font-size: 36px;
+  text-align: start;
+  width: 470px;
+}
+.gallery {
+  width: 630px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.slider-image {
+  margin: 21px 21px 26px 21px;
+}
+.slider-image-inactive {
+  justify-self: center;
+  margin: 0 17px 0 17px;
+}
+.slider-button {
+  background-color: #feafc3;
+}
+.product-description {
+  line-height: 24px;
+  color: #565c66;
+  font-size: 18px;
+  width: 414px;
+}
+.dot-pagination {
+  width: 52px;
+  margin-top: auto;
+  margin-right: auto;
+}
+.dot-pagination-button {
+  width: 12px;
+  height: 12px;
+  border: 0;
+}
+.social-networks {
+  width: 104px;
+  margin-top: auto;
+  margin-left: auto;
+}
+.social-networks-link {
+  height: 28px;
+  width: 28px;
+}
+.social-networks-list li {
+  display: inline-block;
+}
+.social-networks-list {
+  padding: 0;
+  margin: 0;
+  width: 104px;
+}
+.social-networks-footer {
+  width: 104px;
+
+  margin-right: auto;
+}
+.made-by {
+  width: 193px;
+  margin-left: auto;
+  margin-top: auto;
+}
+.navigation-footer {
+  width: 356px;
+}
+
+.banners-list {
+  padding: 0;
+  margin: 0;
+}
+.banners-list li {
+  display: inline-block;
+}
+.banners-item {
+  width: 570px;
+
+  background: #ff7799;
+  border-radius: 16px;
+}
+.catalog-list li {
+  display: inline-block;
+}
+.product-card {
+  width: 270px;
+  background-color: #fcfcfc;
+  display: flex;
+}
+.product-card:nth-child(n + 4) {
+  margin-top: 40px;
+}
+
+.seo-list li {
+  display: inline-block;
+}
+.seo-list {
+  padding: 0;
+  margin: 0;
+}
+.news_subscription {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.news {
+  width: 570px;
+}
+.subscription {
+  width: 570px;
+}
+.pagination-catalog li {
+  display: inline-block;
+}
+.pagination-catalog {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.delivery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 76px;
 }
 .user-interface {
   font-size: 14px;
@@ -77,16 +241,6 @@ h4 {
   font-size: 20px;
   line-height: 24px;
 }
-.product-name {
-  font-weight: 900;
-  font-size: 36px;
-  text-align: start;
-}
-.product-description {
-  line-height: 24px;
-  color: #565c66;
-  font-size: 18px;
-}
 
 .product-card p {
   text-align: center;
@@ -101,11 +255,18 @@ h4 {
 p {
   color: #565c66;
 }
+
 .delivery-form label {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
+}
+.page-footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
 }
 footer .navigation {
   font-size: 14px;
@@ -119,19 +280,28 @@ footer .navigation {
   font-size: 12px;
   line-height: 16px;
 }
-.breedcrumbs {
+.breadcrumbs-link {
+  text-decoration: underline;
+}
+.breadcrumbs li {
+  display: inline-block;
+}
+.breadcrumbs {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 249px;
 }
 .catalog-filter {
   font-size: 14px;
   line-height: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 807px;
 }
-.pagination-catalog {
-  font-size: 16px;
-  line-height: 20px;
-}
+
 a {
   color: #2d3440;
   text-decoration: none;
@@ -164,14 +334,14 @@ a {
   background-repeat: no-repeat;
   background-color: #fcfcfc;
 }
-.banners-item {
-  background: #ff7799;
-  border-radius: 16px;
-}
+
 .product-card-image {
   border-radius: 50%;
 }
 .feedback-annotation {
   font-size: 14px;
   line-height: 20px;
+}
+.visually-hidden {
+  display: none;
 }
