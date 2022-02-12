@@ -147,15 +147,19 @@
       <h2 class="banners-name">Заказывайте мороженое и получайте подарки!</h2>
       <ul class="banners-list">
         <li class="banners-item">
+         
           <h3 class="banners-item-name">Малинка даром!</h3>
           <p class="banners-item-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <button class="banners-button">Хочу подарок</button>
+        
           <img class="banner-image" src="images/raspberries_photo.png" alt="Малинка баннер">
         </li>
         <li class="banners-item">
+         
           <h3 class="banners-item-name">Маршмеллоу даром!</h3>
           <p class="banners-item-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
           <button class="banners-button">Хочу подарок</button>
+       
           <img class="banner-image" src="images/marshmallow_photo.png" alt="Маршмеллоу">
           
         </li>
@@ -249,7 +253,7 @@
         не спамить и не слать всякой ненужной ерунды. Честно =)</p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
         <input type="email" class="email" id="subcscription-email" name="subcscription-email" placeholder="email@example.com">
-        <button class="subcription-form button-light" type="submit">Отправить</button>
+        <button class="subcription-form button-light button-light-submit" type="submit">Отправить</button>
       </form>
     </div>
     </section>
@@ -264,18 +268,18 @@
         <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
         <p class="delivery-form-date>">
           <label for="delivery-date">Дата</label>
-          <input type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
+          <input class="delivery-input delivery-input-date" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
         </p>
         
         <p class="delivery-form-phone>">
           <label for="delivery-phone">Телефон</label>
-          <input type="tel" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
+          <input class="delivery-input delivery-input-phone" type="tel" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
         </p>
         <p class="delivery-form-address>">
           <label for="delivery-address">Адрес</label>
-          <input type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
+          <input class="delivery-input delivery-input-address" type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
         </p>
-          <button class="delivery-form button-light" type="submit">Отправить</button>
+          <button class="delivery-form button-light button-light-submit" type="submit">Отправить</button>
 
       </form>
     </section>
@@ -354,3 +358,4 @@
   </footer>
   </body>
 </html>
+
