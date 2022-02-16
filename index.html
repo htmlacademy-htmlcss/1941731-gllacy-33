@@ -152,7 +152,7 @@
           <p class="banners-item-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <button class="banners-button">Хочу подарок</button>
         
-          <img class="banner-image" src="images/raspberries_photo.png" alt="Малинка баннер">
+          <img class="banners-image" src="images/raspberries_photo.png" alt="Малинка баннер">
         </li>
         <li class="banners-item">
          
@@ -160,7 +160,7 @@
           <p class="banners-item-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
           <button class="banners-button">Хочу подарок</button>
        
-          <img class="banner-image" src="images/marshmallow_photo.png" alt="Маршмеллоу">
+          <img class="banners-image" src="images/marshmallow_photo.png" alt="Маршмеллоу">
           
         </li>
       </ul>
@@ -170,40 +170,48 @@
       <ul class="catalog-list">
      
         <li class="product-card">
+          <div class="card-container">
             <a class="product-card-link" href="#">
-                <img class="product-card-image" height="168" width="168" src="images/ice_cream_raspberries.jpg" alt="Мороженое малинка">
+                <img class="product-card-image" height="168" width="168" src="images/Малинка.png" alt="Мороженое малинка">
                 <h4 class="product-card-title">Малинка</h4>    
             </a>
-            <p>Сливочное мороженое с малиновым джемом</p>
+            <p class="product-card-description">Сливочное мороженое с малиновым джемом</p>
             <b class="product-card-price">310 ₽/кг</b>
             <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button> 
-        </li>
+        </div>
+      </li>
         <li class="product-card">
+          <div class="card-container">
             <a class="product-card-link" href="#">
-                <img class="product-card-image" height="168" width="168" src="images/ice_cream_pistache.jpg" alt="Мороженое фисташка">
+                <img class="product-card-image" height="168" width="168" src="images/Фисташка.png" alt="Мороженое фисташка">
                 <h4 class="product-card-title">Фисташка</h4>    
             </a>
-            <p>Фисташковый пломбир с кусочками шоколада</p>
+            <p class="product-card-description">Фисташковый пломбир с кусочками шоколада</p>
             <b class="product-card-price">340 ₽/кг</b>
             <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button>
+          </div>
         </li>
         <li class="product-card">
+          <div class="card-container">
             <a class="product-card-link" href="#">
-                <img class="product-card-image" height="168" width="168" src="images/ice_cream_blueberry.jpg" alt="Мороженое черника">
+                <img class="product-card-image" height="168" width="168" src="images/Черника.png" alt="Мороженое черника">
                 <h4 class="product-card-title">Черника</h4>    
             </a>
-            <p>Крем-брюле с черничным джемом</p>
+            <p class="product-card-description">Крем-брюле с черничным джемом</p>
             <b class="product-card-price">330 ₽/кг</b>
             <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button>
+          </div>
         </li>
         <li class="product-card">
+          <div class="card-container">
             <a class="product-card-link" href="#">
-                <img class="product-card-image" height="168" width="168" src="images/ice_cream_bubble_gum.jpg" alt="Мороженое Бабл-гам">
+                <img class="product-card-image" height="168" width="168" src="images/Бабл-гам.png" alt="Мороженое Бабл-гам">
                 <h4 class="product-card-title">Бабл-гам</h4>    
             </a>
-            <p>Ванильный пломбир со сладкой посыпкой</p>
+            <p class="product-card-description">Ванильный пломбир со сладкой посыпкой</p>
             <b class="product-card-price">320 ₽/кг</b>
             <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button>
+          </div>
         </li>
       </ul>
     </section>
@@ -265,21 +273,21 @@
         Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
       </div>
       <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-        <p class="delivery-form-date>">
+        <p class="delivery-field delivery-form-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+        <p class="delivery-field delivery-form-date>">
           <label for="delivery-date">Дата</label>
-          <input class="delivery-input delivery-input-date" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
+          <input class="delivery-input delivery-input-date" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" >
         </p>
         
-        <p class="delivery-form-phone>">
+        <p class="delivery-field delivery-form-phone">
           <label for="delivery-phone">Телефон</label>
           <input class="delivery-input delivery-input-phone" type="tel" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
         </p>
-        <p class="delivery-form-address>">
+        <p class="delivery-field delivery-form-address">
           <label for="delivery-address">Адрес</label>
           <input class="delivery-input delivery-input-address" type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
         </p>
-          <button class="delivery-form button-light button-light-submit" type="submit">Отправить</button>
+          <button class="delivery-form-button button-light button-light-submit" type="submit">Отправить</button>
 
       </form>
     </section>
@@ -358,4 +366,3 @@
   </footer>
   </body>
 </html>
-
