@@ -8,13 +8,13 @@
   </head>
  
   <body class="first-slide">
-    <header class="page-header"> 
+    <header class="page-header">
+      <div class="page-container">
       <nav class="navigation">
-        
-      <img src="images/logo.svg" width="137" height="56" alt="Логотип «Глейси»" class="logo-main">
+        <img src="images/logo.svg" width="137" height="56" alt="Логотип «Глейси»" class="logo-main">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">
+            <a class="navigation-link" href="catalog.html">
               Каталог
             </a>
           </li>
@@ -28,37 +28,50 @@
               О компании
             </a>
           </li>
+  
+          
         </ul>
   
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="tel:88005558628">
+            <a class="navigation-link navigation-phone" href="tel:88005558628">
               +7 800 555-86-28
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span >
-                Поиск
-              </span>
+            <a class="navigation-link user-navigation-link user-interface-search" href="#">
+              
+               <image src="images/search_icon.svg">
+            
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span >
-                Вход
-              </span>
+            <a class="navigation-link user-navigation-link " href="#">
+              
+                <image src="images/login_icon.svg">
+                <p>Вход</p>
+             
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span >
-                Корзина
-              </span>
+            <a class="navigation-link user-navigation-link" href="#">
+            
+                <image src="images/shopping_cart_icon_empty.svg">
+                  <p>Пусто</p>
+             
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link user-navigation-link" href="#">
+              
+               <image src="images/shopping_cart_icon_full.svg">
+                <p>100 товаров</p>
+           
             </a>
           </li>
         </ul>
       </nav>
+    </div> 
     </header>
   <main class="main-container main-inner">
     <div class="page-container">
@@ -82,7 +95,7 @@
     <form class="catalog-filter catalog-filter-group" action="https://echo.htmlacademy.ru/" method="get">
         <div class="select">
         <p>Сортировка</p>
-        <select class="select-control" aria-label="Сортировка" id="select">
+        <select class="select-control filter-element" aria-label="Сортировка" id="select">
             <option value="popular">По популярности</option>
             <option value="cheap">Сначала дешёвое</option>
             <option value="expensive">Сначала дорогое</option>
@@ -90,11 +103,14 @@
         </div>
         <div class="filter-price">
         <p class="catalog-filter-group">Цена: 100 ₽-500 ₽</p>
-        <input name="range" id="price-range" type="range" min="0" max="800" value="500" step="1">
+            <div class="filter-element">
+        <input name="range" id="price-range"  type="range" min="0" max="800" value="500" step="1">
+        </div>
       </div>
         <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Жирность</legend>
-            <label class="control">
+            <div class="filter-element">
+            <label class="control ">
                 <input class="control-input" type ="radio" name="fat-content">
                 0%
             </label>
@@ -110,10 +126,12 @@
                 <input class="control-input" type ="radio" name="fat-content">
                 выше 30%
             </label>
+          </div>
         </fieldset>
 
-        <fieldset class="catalog-filter-group">
+        <fieldset class="catalog-filter-group ">
             <legend class="catalog-filter-title">Наполнители</legend>
+            <div class="filter-element">
             <label class="control">
                 <input class="control-input" type ="checkbox" name="chocolate" checked>
                 шоколадные
@@ -134,8 +152,9 @@
                 <input class="control-input" type ="checkbox" name="jam">
                 джемы
             </label>
+          </div>
         </fieldset>
-        <button class="button" type="submit">Применить</button>
+        <button class="button-filter filter-element" type="submit">Применить</button>
     </form>
     
     <ul class="catalog-list catalog-list-inner">
@@ -148,7 +167,7 @@
         </a>
         <p class="product-card-description">Сливочное мороженое с малиновым джемом</p>
         <b class="product-card-price">310 ₽/кг</b>
-        <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button> 
+        <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button> 
       </div>
     </li>
     <li class="product-card">
@@ -159,7 +178,7 @@
         </a>
         <p class="product-card-description">Фисташковый пломбир с кусочками шоколада</p>
         <b class="product-card-price">340 ₽/кг</b>
-        <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button>
+        <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
       </div>
     </li>
     <li class="product-card">
@@ -170,7 +189,7 @@
         </a>
         <p class="product-card-description">Крем-брюле с черничным джемом</p>
         <b class="product-card-price">330 ₽/кг</b>
-        <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button>
+        <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
       </div>
     </li>
     <li class="product-card">
@@ -181,7 +200,7 @@
         </a>
         <p class="product-card-description">Ванильный пломбир со сладкой посыпкой</p>
         <b class="product-card-price">320 ₽/кг</b>
-        <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button>
+        <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
       </div>
     </li>
 
@@ -194,7 +213,7 @@
             </a>
             <p class="product-card-description">Сливочное мороженое с ежевичным джемом</p>
             <b class="product-card-price">330 ₽/кг</b>
-            <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button>
+            <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
           </div>
         </li>
         <li class="product-card">
@@ -205,7 +224,7 @@
             </a>
             <p class="product-card-description">Сливочный пломбир с банановым вкусом</p>
             <b class="product-card-price">340 ₽/кг</b>
-            <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button> 
+            <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button> 
           </div>
         </li>
         <li class="product-card">
@@ -216,7 +235,7 @@
             </a>
             <p class="product-card-description">Классический шоколадный пломбир</p>
             <b class="product-card-price">270 ₽/кг</b>
-            <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button>
+            <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
           </div>
         </li>
         <li class="product-card">
@@ -227,7 +246,7 @@
             </a>
             <p class="product-card-description">Сливочный пломбир с клубничным вкусом</p>
             <b class="product-card-price">300 ₽/кг</b>
-            <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button>
+            <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
           </div>
         </li>
   
@@ -239,7 +258,7 @@
                 </a>
                 <p class="product-card-description">Освежающий лимонный сорбет</p>
                 <b class="product-card-price">310 ₽/кг</b>
-                <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button>
+                <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
               </div>
             </li>
             <li class="product-card">
@@ -250,7 +269,7 @@
                 </a>
                 <p class="product-card-description">Сливочный пломбир с ментоловым сиропом</p>
                 <b class="product-card-price">320 ₽/кг</b>
-                <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button>
+                <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
               </div>
             </li>
             <li class="product-card">
@@ -261,7 +280,7 @@
                 </a>
                 <p class="product-card-description">Фисташковый пломбир с шоколадным сиропом</p>
                 <b class="product-card-price">360 ₽/кг</b>
-                <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button>
+                <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
               </div>
             </li>
             <li class="product-card">
@@ -272,7 +291,7 @@
                 </a>
                 <p class="product-card-description">Классическое крем-брюле</p>
                 <b class="product-card-price">280 ₽/кг</b>
-                <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button>
+                <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
               </div>
             </li>
         </ul>
@@ -280,31 +299,32 @@
         
         <button class="button pagination-show-more" type="button">Показать ещё</button>
         <ul class="pagination-numbers">
+            <li class="pagination-past">
+              <a class="pagination-link " href="#">
+                <img src="images/Arrow-left-dark.svg" alt="Предыдущая страница" href="#">
+              </a>
+           </li>
             <li class="pagination-item">
-                <a class="pagination-link pagination-prev pagination-disabled">
-                    <span class="visually-hidden">Предыдущая страница</span>
-                </a>
+                <a class="pagination-link  pagination-current">1</a>
             </li>
-            <li class="pagination-item">
-                <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
+            <li class="pagination-item pagination-past">
                 <a class="pagination-link" href="#">2</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item pagination-past">
                 <a class="pagination-link" href="#">3</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item pagination-past">
                 <a class="pagination-link" href="#">4</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item pagination-past">
                 <a class="pagination-link" href="#">5</a>              
             </li>
-            <li class="pagination-item">
-                <a class="pagination-link pagination-next" href="#">
-                    <span class="visually-hidden">Следующая страница</span>
-                </a>
-            </li>
+            <li class="pagination-past">
+              <a  href="#">
+                <img src="images/Arrow-right-dark.svg" alt="Следующая страница" href="#">
+              </a>
+             </li>
+            
         </ul>
         
       </div>
@@ -314,7 +334,7 @@
    
   </main>
 
-  <footer class="page-footer page-footer-inner">
+  <footer class="page-footer">
     <div class="page-footer-container">
     <section class="social-networks-footer">
       <h2 class="visually-hidden">Социальные сети</h2>
@@ -338,22 +358,25 @@
     </section>
     <nav class="navigation-footer">
       <ul class="navigation-list navigation-footer">
+        
         <li class="navigation-item">
           <a class="navigation-link for-suppliers" href="#">
+            <img src="images/Heart.svg" class="footer-heart">   
             Для поставщиков
           </a>
         </li>
+      
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            О производстве
-          </a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">
+          <a class="navigation-link our-documents" href="#">
             Наши документы
           </a>
         </li>
         <li class="navigation-item">
+          <a class="navigation-link about" href="#">
+            О производстве
+          </a>
+        </li>
+        <li class="navigation-item eco-standarts">
           <a class="navigation-link" href="#">
             Экологические стандарты
           </a>
