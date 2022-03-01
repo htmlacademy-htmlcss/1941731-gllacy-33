@@ -43,7 +43,7 @@
           <a class="navigation-link user-navigation-link user-interface-search" href="#">
             
              <image src="images/search_icon.svg">
-          
+            
           </a>
         </li>
         <li class="navigation-item">
@@ -104,15 +104,23 @@
     </section>
     <section class="gallery">
       <h2 class="gallery-title visually-hidden">Фотогалерея</h2>
-       <a class="slider-button slider-prev" href="#" >
-        <img src="images/Arrow-right.svg" class="arrow-image" alt="Предыдущий слайд">
-       </a>
+      
+       <div class="slider-container">
+        <a class="slider-button slider-prev" href="#" > 
+          <img src="images/Arrow-left.svg" class="arrow-image" alt="Предыдущий слайд">
+         </a>
       <img class="slider-image" width="306" height="507" src="images/ice_cream_strawberry_jam_full.png" alt="Фото мороженого, основной слайд">
-       <a class="slider-button slider-next" href="#">
+      <a class="slider-button slider-next" href="#">
         <img src="images/Arrow-right.svg" class="arrow-image"  alt="Следующий слайд">
        </a> 
+    </div>
+      
+       <div class="slider-container-inactive">
       <img class="slider-image-incactive" width="66" height="150" src="images/ice_cream_banana_full.png" alt="неактивный слайд">
+    </div>
+    <div class="slider-container-inactive">
       <img class="slider-image-incactive" width="66" height="150" src="images/ice_cream_caramel_marshmallows_full.png" alt="неактивный слайд">
+    </div>
 
       
     
@@ -130,7 +138,7 @@
       <ul class="social-networks-list">
         <li class="social-networks-item">
           
-            <a  class="social-networks-link" href="https://vk.com/htmlacademy" ><img   src="images/VK.svg"  alt="VK"></a>
+            <a  class="social-networks-link" href="https://vk.com/htmlacademy" ><img class="social-networks-image"  src="images/VK.svg"  alt="VK"></a>
           
         </li>
         <li class="social-networks-item">
