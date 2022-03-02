@@ -40,31 +40,34 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="user-interface">
-              Поиск
-            </span>
+          <a class="navigation-link user-navigation-link user-interface-search" href="#">
+            
+             <image src="images/search_icon.svg">
+            
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link user-interface" href="#">
-            <span>
-              Вход
-            </span>
+          <a class="navigation-link user-navigation-link " href="#">
+            
+              <image src="images/login_icon.svg">
+              <p>Вход</p>
+           
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link user-interface" href="#">
-            <span>
-              Пусто
-            </span>
+          <a class="navigation-link user-navigation-link" href="#">
+          
+              <image src="images/shopping_cart_icon_empty.svg">
+                <p>Пусто</p>
+           
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link user-interface" href="#">
-            <span>
-             100 товаров
-            </span>
+          <a class="navigation-link user-navigation-link" href="#">
+            
+             <image src="images/shopping_cart_icon_full.svg">
+              <p>100 товаров</p>
+         
           </a>
         </li>
       </ul>
@@ -101,43 +104,51 @@
     </section>
     <section class="gallery">
       <h2 class="gallery-title visually-hidden">Фотогалерея</h2>
-      <button class="slider-button slider-prev" type="button">
-        <img src="images/arrow_left_inactive.svg" alt="Предыдущий слайд">
-      </button>
+      
+       <div class="slider-container">
+        <a class="slider-button slider-prev" href="#" > 
+          <img src="images/Arrow-left.svg" class="arrow-image" alt="Предыдущий слайд">
+         </a>
       <img class="slider-image" width="306" height="507" src="images/ice_cream_strawberry_jam_full.png" alt="Фото мороженого, основной слайд">
-      <button class="slider-button slider-next" type="button">
-        <img src="images/arrow_right_inactive.svg" alt="Следующий слайд">
-      </button>
+      <a class="slider-button slider-next" href="#">
+        <img src="images/Arrow-right.svg" class="arrow-image"  alt="Следующий слайд">
+       </a> 
+    </div>
+      
+       <div class="slider-container-inactive">
       <img class="slider-image-incactive" width="66" height="150" src="images/ice_cream_banana_full.png" alt="неактивный слайд">
+    </div>
+    <div class="slider-container-inactive">
       <img class="slider-image-incactive" width="66" height="150" src="images/ice_cream_caramel_marshmallows_full.png" alt="неактивный слайд">
+    </div>
 
       
     
 
 
     </section>
-    <section class="dot-pagination">
-      <h2 class="visually-hidden">Точечная пагинация</h2>
-      <button type="button" name="dot-pagination" class="dot-pagination-first dot-pagination-button"></button>
-      <button type="button" name="dot-pagination" class="dot-pagination-second dot-pagination-button"></button>
-      <button type="button" name="dot-pagination" class="dot-pagination-third dot-pagination-button"></button>
-    </section>
+    <div class="dot-pagination">
+     
+      <button type="button" name="dot-pagination" class="dot-pagination-active dot-pagination-button"></button>
+      <button type="button" name="dot-pagination" class="dot-pagination-inactive dot-pagination-button"></button>
+      <button type="button" name="dot-pagination" class="dot-pagination-inactive dot-pagination-button"></button>
+    </div>
     <section class="social-networks">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social-networks-list">
         <li class="social-networks-item">
           
-            <a href="https://vk.com/htmlacademy" ><img class="social-networks-link"  src="images/VK.svg"  alt="VK"></a>
+            <a  class="social-networks-link" href="https://vk.com/htmlacademy" ><img class="social-networks-image"  src="images/VK.svg"  alt="VK"></a>
           
         </li>
         <li class="social-networks-item">
           
-           <a href="https://www.facebook.com/htmlacademy"> <img class="social-networks-link"  src="images/Facebook.svg"  alt="Facebook"> </a>
+           <a  class="social-networks-link" href="https://www.facebook.com/htmlacademy"> <img  src="images/Facebook.svg"  alt="Facebook"> </a>
           
         </li>
         <li class="social-networks-item">
           
-           <a href="https://www.instagram.com/htmlacademy/"> <img class="social-networks-link"  src="images/insta.svg"  alt="instagram"></a>
+           <a class="social-networks-link" href="https://www.instagram.com/htmlacademy/"> <img   src="images/insta.svg"  alt="instagram"></a>
          
         </li>
       </ul>
@@ -177,7 +188,7 @@
             </a>
             <p class="product-card-description">Сливочное мороженое с малиновым джемом</p>
             <b class="product-card-price">310 ₽/кг</b>
-            <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button> 
+            <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button> 
         </div>
       </li>
         <li class="product-card">
@@ -188,7 +199,7 @@
             </a>
             <p class="product-card-description">Фисташковый пломбир с кусочками шоколада</p>
             <b class="product-card-price">340 ₽/кг</b>
-            <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button>
+            <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
           </div>
         </li>
         <li class="product-card">
@@ -199,7 +210,7 @@
             </a>
             <p class="product-card-description">Крем-брюле с черничным джемом</p>
             <b class="product-card-price">330 ₽/кг</b>
-            <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button>
+            <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
           </div>
         </li>
         <li class="product-card">
@@ -210,7 +221,7 @@
             </a>
             <p class="product-card-description">Ванильный пломбир со сладкой посыпкой</p>
             <b class="product-card-price">320 ₽/кг</b>
-            <button class="button-add-to-shopping-cart" type="button"><img src="images/shopping_cart_icon_empty.svg" alt="Корзина"></button>
+            <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
           </div>
         </li>
       </ul>
@@ -314,39 +325,42 @@
       <ul class="social-networks-list">
         <li class="social-networks-item">
           
-            <a href="https://vk.com/htmlacademy" ><img class="social-networks-link"  src="images/VK.svg"  alt="VK"></a>
+            <a href="https://vk.com/htmlacademy" class="social-networks-link"  ><img  src="images/VK.svg"  alt="VK"></a>
           
         </li>
         <li class="social-networks-item">
           
-           <a href="https://www.facebook.com/htmlacademy"> <img class="social-networks-link"  src="images/Facebook.svg"  alt="Facebook"> </a>
+           <a href="https://www.facebook.com/htmlacademy" class="social-networks-link"> <img   src="images/Facebook.svg"  alt="Facebook"> </a>
           
         </li>
         <li class="social-networks-item">
           
-           <a href="https://www.instagram.com/htmlacademy/"> <img class="social-networks-link"  src="images/insta.svg"  alt="instagram"></a>
+           <a href="https://www.instagram.com/htmlacademy/" class="social-networks-link" > <img  src="images/insta.svg"  alt="instagram"></a>
          
         </li>
       </ul>
     </section>
     <nav class="navigation-footer">
       <ul class="navigation-list navigation-footer">
+        
         <li class="navigation-item">
           <a class="navigation-link for-suppliers" href="#">
+            <img src="images/Heart.svg" class="footer-heart">   
             Для поставщиков
           </a>
         </li>
+      
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            О производстве
-          </a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">
+          <a class="navigation-link our-documents" href="#">
             Наши документы
           </a>
         </li>
         <li class="navigation-item">
+          <a class="navigation-link about" href="#">
+            О производстве
+          </a>
+        </li>
+        <li class="navigation-item eco-standarts">
           <a class="navigation-link" href="#">
             Экологические стандарты
           </a>
