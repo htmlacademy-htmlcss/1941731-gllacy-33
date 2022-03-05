@@ -824,6 +824,7 @@ legend {
 .navigation-current {
   background: #ff4a78;
   border-radius: 26px;
+  color: #fcfcfc;
 }
 .user-navigation-link {
   display: flex;
@@ -930,6 +931,9 @@ footer .navigation {
 .made-by-academy {
   font-size: 12px;
   line-height: 16px;
+}
+.breadcrumbs {
+  padding-left: 0;
 }
 .breadcrumbs-link {
   border-bottom: solid 1px #2d3440;
