@@ -15,17 +15,17 @@
         <img src="images/logo.svg" width="137" height="56" alt="Логотип «Глейси»" class="logo-main">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">
+            <a class="navigation-link navigation-link-menu navigation-current" href="catalog.html">
               Каталог
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link navigation-link-menu" href="#">
               Доставка и оплата
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link navigation-link-menu" href="#">
               О компании
             </a>
           </li>
@@ -83,8 +83,14 @@
               <a class="breadcrumbs-link" href="index.html">Главная</a>
            </li>
            <li class="breadcrumbs-item">
+             <img src="images/chevrons-right.svg" class="breadcrumbs-img" href="index.html" alt="">
+           </li>
+           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
-            </li>
+           </li>
+           <li class="breadcrumbs-item">
+            <img src="images/chevrons-right.svg" class="breadcrumbs-img"href="index.html" alt="">
+          </li>
             <li class="breadcrumbs-item">
                 <span class="breadcrumbs-link-current" >Сливочное</span>
             </li>
@@ -298,10 +304,11 @@
         </ul>
         <div class="pagination-catalog">
         
-        <button class="button pagination-show-more" type="button">Показать ещё</button>
+          <button class="button pagination-show-more" type="button">Показать ещё</button>
         <ul class="pagination-numbers">
+          
             <li >
-              <a class="pagination-link " href="#">
+              <a class="pagination-link disabled"  disabled="true">
                 <img src="images/Arrow-left-dark.svg" alt="Предыдущая страница" href="#">
               </a>
            </li>
@@ -360,25 +367,25 @@
     <nav class="navigation-footer">
       <ul class="navigation-list navigation-footer">
         
-        <li class="navigation-item">
+        <li >
           <a class="navigation-link for-suppliers" href="#">
             <img src="images/Heart.svg" class="footer-heart">   
             Для поставщиков
           </a>
         </li>
       
-        <li class="navigation-item">
+        <li >
           <a class="navigation-link our-documents" href="#">
             Наши документы
           </a>
         </li>
-        <li class="navigation-item">
+        <li >
           <a class="navigation-link about" href="#">
             О производстве
           </a>
         </li>
-        <li class="navigation-item eco-standarts">
-          <a class="navigation-link" href="#">
+        <li  >
+          <a class="navigation-link eco-standarts" href="#">
             Экологические стандарты
           </a>
         </li>
