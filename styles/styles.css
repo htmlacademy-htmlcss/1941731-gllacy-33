@@ -109,6 +109,7 @@ button:disabled {
   border-radius: 20px;
   border: 0;
   padding: 8px 54px;
+  font-size: 14px;
 }
 .range-toggle {
   width: 16px;
@@ -321,9 +322,9 @@ button:disabled {
   justify-content: space-between;
   width: 324px;
   box-sizing: border-box;
-  border: 1px solid #b9b9b9;
+  outline: 1px solid #b9b9b9;
   border-radius: 4px;
-  padding: 14px 16px;
+  align-items: center;
 }
 .popover-search-input {
   border: 0;
@@ -331,9 +332,12 @@ button:disabled {
   flex-grow: 1;
   background-color: #fcfcfc;
   padding: 0;
+  font-size: 16px;
+  line-height: 20px;
 }
 .popover-search-img {
   opacity: 0.4;
+  margin-right: 10px;
 }
 .popover-search-img:hover {
   cursor: pointer;
@@ -364,6 +368,7 @@ button:disabled {
   width: 10px;
   height: 10px;
   padding: 3px;
+  cursor: pointer;
 }
 .popover-title {
   margin: 0;
@@ -482,6 +487,8 @@ ul .popover-catalog-main-element {
 }
 .popover-catalog-element:hover {
   background: #ffcbd8;
+
+  cursor: pointer;
 }
 .popover-catalog-element:focus {
   background: #ff7799;
@@ -533,6 +540,7 @@ ul .popover-catalog-main-element {
 .modal-free-form {
   min-height: 149px;
   resize: none;
+  padding: 14px 16px;
 }
 .modal-container-close {
   display: none;
@@ -863,6 +871,7 @@ header {
 
 .navigation-footer .navigation-link {
   font-size: 14px;
+  padding: 0;
 }
 
 .banners-list {
@@ -1142,6 +1151,7 @@ legend {
 } */
 .catalog-filter-name {
   margin-bottom: 8px;
+  margin-left: 16px;
 }
 .pagination-current {
   background-color: white;
