@@ -13,7 +13,9 @@
     <header class="page-header">
     <div class="page-container">
     <nav class="navigation">
-      <img src="images/logo.svg" width="137" height="56" alt="Логотип «Глейси»" class="logo-main">
+      <a class="logo-main" href="index.html">
+        <img src="images/logo.svg" width="137" height="56" alt="Логотип «Глейси»" class="logo-main">
+      </a>
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">
@@ -52,7 +54,7 @@
         <li class="navigation-item">
           <a class="navigation-link user-navigation-link user-interface-search" href="#">
             
-             <image src="images/search_icon.svg">
+             <img src="images/search_icon.svg" alt="Поиск">
             
           </a>
           <div class="popover-search popover">
@@ -66,7 +68,7 @@
         <li class="navigation-item">
           <a class="navigation-link user-navigation-link " href="#">
             
-              <image src="images/login_icon.svg">
+              <img src="images/login_icon.svg" alt="Логин">
               <p>Вход</p>
            
           </a>
@@ -75,8 +77,8 @@
             <h3>
               Личный кабинет
             </h3>
-            <input type="email form-input" placeholder="email@example.com">
-            <input type="password form-input" placeholder="••••••">
+            <input type="email" class="form-input" placeholder="email@example.com">
+            <input type="password" class="form-input" placeholder="••••••">
             <div class="popover-login-user">
             <button class="button-light button-login">Войти</button>
             <div class="popover-login-a">
@@ -89,7 +91,7 @@
         </li>
         <li class="navigation-item">
           <a class="navigation-link user-navigation-link" href="#">
-                <image src="images/shopping_cart_icon_empty.svg">
+                <img src="images/shopping_cart_icon_empty.svg" alt="Корзина">
                 <p>Пусто</p>
           </a>
           
@@ -97,12 +99,12 @@
         
         <li class="navigation-item">
           <a class="navigation-link user-navigation-link" href="#">
-             <image src="images/shopping_cart_icon_full.svg">
+             <img src="images/shopping_cart_icon_full.svg" alt="Корзина">
               <p>100 товаров</p> 
           </a>
           <div class="popover popover-cart">
             <div class="popover-content">
-              <h3 class="popover-title">Корзина</h2>
+              <h3 class="popover-title">Корзина</h3>
               <ul class="popover-list">
                 <li class="popover-item">
                   <img class="popover-image" src="images/Малинка.png" alt="Малинка" >
@@ -351,7 +353,7 @@
       <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="delivery-field delivery-form-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
         <p class="delivery-field delivery-form-date>">
- 
+          <label for="delivery-date">Дата</label>
           <input class="form-input delivery-input-date" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" >
         </p>
         
@@ -360,7 +362,7 @@
           <input class="form-input delivery-input-phone" type="tel" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
         </p>
         <p class="delivery-field delivery-form-address">
-          <label for="delivery-adress">
+          <label for="delivery-address">
             Адрес
             <img src="images/Tooltip.svg" alt="i">
           </label>
@@ -413,7 +415,7 @@
         
         <li class="navigation-item">
           <a class="navigation-link for-suppliers" href="#">
-            <img src="images/Heart.svg" class="footer-heart">   
+            <img src="images/Heart.svg" class="footer-heart" alt="">   
             Для поставщиков
           </a>
         </li>
@@ -449,7 +451,7 @@
   <div class="modal-container modal-container-close">
     <div class="modal modal-feedback">
       <button class="modal-close-button">
-        <img class="popover-cross"src="images/Cross.svg" alt="X">
+        <img class="popover-cross" src="images/Cross.svg" alt="X">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
