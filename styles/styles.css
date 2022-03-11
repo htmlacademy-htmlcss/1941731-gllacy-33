@@ -595,6 +595,29 @@ select:focus {
   background: rgba(252, 252, 252, 0.5);
   outline: 2px solid #fcfcfc;
 }
+
+.select {
+  position: relative;
+  display: flex;
+  width: 196px;
+}
+
+
+.select-control {
+  width: 100%;
+  padding: 8px 14px;
+  background-image: url("../images/Arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 13px center;
+  appearance: none;
+}
+.select-control:hover,
+.select-control:focus {
+  background-image: url("../images/Arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 13px center;
+}
+
 header {
   line-height: 20px;
 }
@@ -1152,6 +1175,7 @@ legend {
 .catalog-filter-name {
   margin-bottom: 8px;
   margin-left: 16px;
+  color: #2d3440;
 }
 .pagination-current {
   background-color: white;
@@ -1389,6 +1413,7 @@ footer .navigation {
   display: flex;
   flex-direction: column;
 }
+
 .filter-price {
   display: flex;
   flex-direction: column;
