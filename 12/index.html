@@ -57,8 +57,8 @@
           </a>
           <div class="popover-search popover">
             <div class="popover-search-content">
-            <input class="popover-search-input" placeholder="Поиск по сайту">
-            <img class="popover-search-img" src="images/Cross.svg" alt="X" >
+            <input class="popover-search-input form-input " placeholder="Поиск по сайту">
+            <img class="popover-search-img popover-cross" src="images/Cross.svg" alt="X" >
           </div>
           </div>
           
@@ -75,8 +75,8 @@
             <h3>
               Личный кабинет
             </h3>
-            <input type="email" placeholder="email@example.com">
-            <input type="password" placeholder="••••••">
+            <input type="email form-input" placeholder="email@example.com">
+            <input type="password form-input" placeholder="••••••">
             <div class="popover-login-user">
             <button class="button-light button-login">Войти</button>
             <div class="popover-login-a">
@@ -351,10 +351,7 @@
       <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="delivery-field delivery-form-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
         <p class="delivery-field delivery-form-date>">
-          <label for="delivery-date">
-            Дата
-            <img src="images/Tooltip.svg" alt="i">
-          </label>
+ 
           <input class="form-input delivery-input-date" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" >
         </p>
         
@@ -452,14 +449,14 @@
   <div class="modal-container modal-container-close">
     <div class="modal modal-feedback">
       <button class="modal-close-button">
-        <img src="images/Cross.svg" alt="X">
+        <img class="popover-cross"src="images/Cross.svg" alt="X">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
         <h3 class="modal-title">Мы обязательно ответим вам!</h3>
-        <input placeholder="Имя и фамилия">
-        <input placeholder="email@example.com">
-        <textarea class="modal-free-form" placeholder="В свободной форме"></textarea>
+        <input class="form-input" placeholder="Имя и фамилия">
+        <input class="form-input" placeholder="email@example.com">
+        <textarea class="modal-free-form form-input" placeholder="В свободной форме"></textarea>
       
        
         <button class="button-light">Отправить</button>

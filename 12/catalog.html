@@ -56,8 +56,8 @@
             </a>
             <div class="popover-search popover">
               <div class="popover-search-content">
-              <input class="popover-search-input" placeholder="Поиск по сайту">
-              <img class="popover-search-img" src="images/Cross.svg" alt="X" >
+              <input class="popover-search-input form-input " placeholder="Поиск по сайту">
+              <img class="popover-search-img popover-cross" src="images/Cross.svg" alt="X" >
             </div>
             </div>
             
@@ -74,8 +74,8 @@
               <h3>
                 Личный кабинет
               </h3>
-              <input type="email" placeholder="email@example.com">
-              <input type="password" placeholder="••••••">
+              <input type="email form-input" placeholder="email@example.com">
+              <input type="password form-input" placeholder="••••••">
               <div class="popover-login-user">
               <button class="button-light button-login">Войти</button>
               <div class="popover-login-a">
@@ -165,7 +165,7 @@
     <h2 class="visually-hidden">Список товаров с фильтрами</h2>
     <form class="catalog-filter catalog-filter-group" action="https://echo.htmlacademy.ru/" method="get">
         <div class="select">
-        <p class="catalog-filter-name">Сортировка</p>
+        <p class="catalog-filter-name">Сортировка:</p>
         <select class="select-control filter-element" aria-label="Сортировка" id="select">
             <option value="popular">По популярности</option>
             <option value="cheap">Сначала дешёвое</option>
@@ -199,7 +199,7 @@
           </div>
         </fieldset>
         <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Жирность</legend>
+            <legend class="catalog-filter-title">Жирность:</legend>
             <div class="filter-element">
             <label class="control">
                 <input class="control-input visually-hidden" type ="radio" name="fat-content">
@@ -225,7 +225,7 @@
         </fieldset>
 
         <fieldset class="catalog-filter-group ">
-            <legend class="catalog-filter-title">Наполнители</legend>
+            <legend class="catalog-filter-title catalog-filter-name">Наполнители:</legend>
             <div class="filter-element">
             <label class="control">
                 <input class="control-input visually-hidden" type ="checkbox" name="chocolate" checked>
@@ -460,25 +460,25 @@
     <nav class="navigation-footer">
       <ul class="navigation-list navigation-footer">
         
-        <li >
+        <li class="navigation-item">
           <a class="navigation-link for-suppliers" href="#">
             <img src="images/Heart.svg" class="footer-heart">   
             Для поставщиков
           </a>
         </li>
       
-        <li >
+        <li class="navigation-item">
           <a class="navigation-link our-documents" href="#">
             Наши документы
           </a>
         </li>
-        <li >
+        <li class="navigation-item">
           <a class="navigation-link about" href="#">
             О производстве
           </a>
         </li>
-        <li  >
-          <a class="navigation-link eco-standarts" href="#">
+        <li class="navigation-item eco-standarts">
+          <a class="navigation-link" href="#">
             Экологические стандарты
           </a>
         </li>
@@ -497,4 +497,3 @@
   </footer>
   </body>
 </html>
-
