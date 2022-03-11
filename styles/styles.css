@@ -38,6 +38,7 @@ body {
   background-color: #feafc3;
   color: #2d3440;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -556,7 +557,7 @@ ul .popover-catalog-main-element {
   outline: 0;
   pointer-events: none;
 }
-form-input {
+.form-input {
   font-family: "Inter";
   font-size: 16px;
   line-height: 20px;
@@ -564,23 +565,24 @@ form-input {
   outline: 1px solid #b9b9b9;
   border: 0;
   border-radius: 4px;
+  cursor: default;
 }
-form-input:hover {
+.form-input:hover {
   cursor: pointer;
   outline: 1px solid #2d3440;
 }
-form-input:focus {
+.form-input:focus {
   outline: 2px solid #2d3440;
 }
-form-input:invalid {
+.form-input:invalid {
   border: 1px solid #ea5454;
   box-sizing: border-box;
 }
-form-input:hover:invalid {
+.form-input:hover:invalid {
   border: 2px solid #ea5454;
   box-sizing: border-box;
 }
-form-input:disabled {
+.form-input:disabled {
   background: #e7e7e7;
   outline: 1px solid #b9b9b9;
   box-sizing: border-box;
@@ -601,7 +603,6 @@ select:focus {
   display: flex;
   width: 196px;
 }
-
 
 .select-control {
   width: 100%;
