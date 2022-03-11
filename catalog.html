@@ -11,20 +11,31 @@
     <header class="page-header">
       <div class="page-container">
       <nav class="navigation">
+      <a class="logo-main" href="index.html">
         <img src="images/logo.svg" width="137" height="56" alt="Логотип «Глейси»" class="logo-main">
+      </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-menu navigation-current" href="catalog.html">
+            <a class="navigation-link" href="catalog.html">
               Каталог
             </a>
+            <div class="popover-catalog popover">
+              <ul>
+                <li class="popover-catalog-main-element popover-catalog-element"><a>Новинки</a></li>
+                <li class="popover-catalog-element"><a>Сливочное</a></li>
+                <li class="popover-catalog-element"><a>Щербеты</a></li>
+                <li class="popover-catalog-element"><a>Фруктовый лед</a></li>
+                <li class="popover-catalog-element"><a>Мелорин</a></li>
+              </ul>
+            </div>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-menu" href="#">
+            <a class="navigation-link" href="#">
               Доставка и оплата
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-menu" href="#">
+            <a class="navigation-link" href="#">
               О компании
             </a>
           </li>
@@ -41,33 +52,88 @@
           <li class="navigation-item">
             <a class="navigation-link user-navigation-link user-interface-search" href="#">
               
-               <image src="images/search_icon.svg">
-            
+               <img src="images/search_icon.svg" alt="Поиск">
+              
             </a>
+            <div class="popover-search popover">
+              <div class="popover-search-content">
+              <input class="popover-search-input form-input " placeholder="Поиск по сайту">
+              <img class="popover-search-img popover-cross" src="images/Cross.svg" alt="X" >
+            </div>
+            </div>
+            
           </li>
           <li class="navigation-item">
             <a class="navigation-link user-navigation-link " href="#">
               
-                <image src="images/login_icon.svg">
+                <img src="images/login_icon.svg" alt="Логин">
                 <p>Вход</p>
              
             </a>
+            <div class="popover popover-login">
+              <div class="popover-login-content">
+              <h3>
+                Личный кабинет
+              </h3>
+              <input type="email" class="form-input" placeholder="email@example.com">
+              <input type="password" class="form-input" placeholder="••••••">
+              <div class="popover-login-user">
+              <button class="button-light button-login">Войти</button>
+              <div class="popover-login-a">
+              <a>Забыли пароль</a>
+              <a>Регистрация</a>
+              </div>
+            </div>
+            </div>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link user-navigation-link" href="#">
-            
-                <image src="images/shopping_cart_icon_empty.svg">
+                  <img src="images/shopping_cart_icon_empty.svg" alt="Корзина">
                   <p>Пусто</p>
-             
             </a>
+            
           </li>
+          
           <li class="navigation-item">
             <a class="navigation-link user-navigation-link" href="#">
-              
-               <image src="images/shopping_cart_icon_full.svg">
-                <p>100 товаров</p>
-           
+               <img src="images/shopping_cart_icon_full.svg" alt="Корзина">
+                <p>100 товаров</p> 
             </a>
+            <div class="popover popover-cart">
+              <div class="popover-content">
+                <h3 class="popover-title">Корзина</h3>
+                <ul class="popover-list">
+                  <li class="popover-item">
+                    <img class="popover-image" src="images/Малинка.png" alt="Малинка" >
+                    <div class="popover-product">
+                      <h6 class="popover-product-name">Малинка</h6>
+                      <p class="popover-description">1 кг х 310 ₽</p>
+                    </div>
+                    <h6 class="popover-price">310 ₽</h6>
+                    <img class="popover-cross" src="images/Cross.svg" alt="Х" >
+                  </li>
+                  <li>
+                    <li class="popover-item">
+                      <img class="popover-image" src="images/Бабл-гам.png" alt="Бабл-гам" >
+                      <div class="popover-product">
+                        <h6 class="popover-product-name">Малинка</h6>
+                        <p class="popover-description">1,5 кг х 320 ₽</p>
+                      </div>
+                      <h6 class="popover-price">480 ₽</h6>
+                      <img class="popover-cross" src="images/Cross.svg" alt="Х" >
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="popover-final">
+              <button class="button-light">Оформить заказ</button>
+              <h6>Итого: 790 ₽</h6>
+            </div>
+          </div>
+          <div class="popover-empty popover">
+            <h3 class="popover-empty-content">Ваша корзина пока пуста</h3>
+          </div>
           </li>
         </ul>
       </nav>
@@ -82,13 +148,13 @@
               <a class="breadcrumbs-link" href="index.html">Главная</a>
            </li>
            <li class="breadcrumbs-item">
-             <img src="images/chevrons-right.svg" class="breadcrumbs-img" href="index.html" alt="">
+             <img src="images/chevrons-right.svg" class="breadcrumbs-img" alt="">
            </li>
            <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
            </li>
            <li class="breadcrumbs-item">
-            <img src="images/chevrons-right.svg" class="breadcrumbs-img"href="index.html" alt="">
+            <img src="images/chevrons-right.svg" class="breadcrumbs-img" alt="">
           </li>
             <li class="breadcrumbs-item">
                 <span class="breadcrumbs-link-current" >Сливочное</span>
@@ -100,62 +166,93 @@
     <h2 class="visually-hidden">Список товаров с фильтрами</h2>
     <form class="catalog-filter catalog-filter-group" action="https://echo.htmlacademy.ru/" method="get">
         <div class="select">
-        <p class="catalog-filter-name">Сортировка</p>
+        <p class="catalog-filter-name">Сортировка:</p>
+        
         <select class="select-control filter-element" aria-label="Сортировка" id="select">
             <option value="popular">По популярности</option>
             <option value="cheap">Сначала дешёвое</option>
             <option value="expensive">Сначала дорогое</option>
         </select>
+        <!-- <img class="select-image" src="images/Arrow-down.svg" alt=""> -->
         </div>
-        <div class="filter-price">
-        <p class="catalog-filter-group catalog-filter-name">Цена: 100 ₽-500 ₽</p>
-            <div class="filter-element">
-        <input name="range" id="price-range"  type="range" min="0" max="800" value="500" step="1">
-        </div>
-      </div>
         <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Жирность</legend>
+         
+          <div class="range-wrapper-inputs">
+            Цена:
+            <label class="catalog-filter-label">
+               <input class="range-input" type="number" value="100" name="min-price"> ₽
+            </label>
+            <label class="catalog-filter-label">
+              – <input class="range-input" type="number" value="500" name="max-price" style="width: 37px"> ₽
+            </label>
+          </div>
+          <div class="range">
+            <div class="range-scale filter-element">
+              <div class="range-bar" style="left:40px; width:56px" >
+                <button class="range-toggle toggle-min">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle toggle-max">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
+            </div>
+
+            
+          </div>
+        </fieldset>
+        <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Жирность:</legend>
             <div class="filter-element">
-            <label class="control ">
-                <input class="control-input " type ="radio" name="fat-content">
+            <label class="control">
+                <input class="control-input visually-hidden" type ="radio" name="fat-content">
+                <span class="control-mark"></span>
                 0%
             </label>
             <label class="control">
-                <input class="control-input " type ="radio" name="fat-content" checked>
+                <input class="control-input visually-hidden" type ="radio" name="fat-content" checked>
+                <span class="control-mark"></span>
                 до 10%
             </label>
             <label class="control">
-                <input class="control-input " type ="radio" name="fat-content">
+                <input class="control-input visually-hidden" type ="radio" name="fat-content">
+                <span class="control-mark"></span>
                 до 30%
             </label>
             <label class="control">
-                <input class="control-input " type ="radio" name="fat-content">
+                <input class="control-input visually-hidden" type ="radio" name="fat-content">
+                <span class="control-mark"></span>
                 выше 30%
             </label>
           </div>
         </fieldset>
 
         <fieldset class="catalog-filter-group ">
-            <legend class="catalog-filter-title">Наполнители</legend>
+            <legend class="catalog-filter-title catalog-filter-name">Наполнители:</legend>
             <div class="filter-element">
             <label class="control">
-                <input class="control-input" type ="checkbox" name="chocolate" checked>
+                <input class="control-input visually-hidden" type ="checkbox" name="chocolate" checked>
+                <span class="control-mark"></span>
                 шоколадные
             </label>
             <label class="control">
-                <input class="control-input" type ="checkbox" name="sugar" checked>
+                <input class="control-input visually-hidden" type ="checkbox" name="sugar" checked>
+                <span class="control-mark"></span>
                 сахарные посыпки
             </label>
             <label class="control">
-                <input class="control-input" type ="checkbox" name="fruit">
+                <input class="control-input visually-hidden" type ="checkbox" name="fruit">
+                <span class="control-mark"></span>
                 фрукты
             </label>
             <label class="control">
-                <input class="control-input" type ="checkbox" name="syrup">
+                <input class="control-input visually-hidden" type ="checkbox" name="syrup">
+                <span class="control-mark"></span>
                 сиропы
             </label>
             <label class="control">
-                <input class="control-input" type ="checkbox" name="jam">
+                <input class="control-input visually-hidden" type ="checkbox" name="jam">
+                <span class="control-mark"></span>
                 джемы
             </label>
           </div>
@@ -307,8 +404,8 @@
         <ul class="pagination-numbers">
           
             <li >
-              <a class="pagination-link disabled"  disabled="true">
-                <img src="images/Arrow-left-dark.svg" alt="Предыдущая страница" href="#">
+              <a class="pagination-link disabled" href="#" >
+                <img src="images/Arrow-left-dark.svg" alt="Предыдущая страница" >
               </a>
            </li>
             <li class="pagination-item">
@@ -328,7 +425,7 @@
             </li>
             <li >
               <a  href="#">
-                <img src="images/Arrow-right-dark.svg" class="pagination-arrow-right" alt="Следующая страница" href="#">
+                <img src="images/Arrow-right-dark.svg" class="pagination-arrow-right" alt="Следующая страница" >
               </a>
              </li>
             
@@ -366,25 +463,25 @@
     <nav class="navigation-footer">
       <ul class="navigation-list navigation-footer">
         
-        <li >
+        <li class="navigation-item">
           <a class="navigation-link for-suppliers" href="#">
-            <img src="images/Heart.svg" class="footer-heart">   
+            <img src="images/Heart.svg" class="footer-heart" alt="">   
             Для поставщиков
           </a>
         </li>
       
-        <li >
+        <li class="navigation-item">
           <a class="navigation-link our-documents" href="#">
             Наши документы
           </a>
         </li>
-        <li >
+        <li class="navigation-item">
           <a class="navigation-link about" href="#">
             О производстве
           </a>
         </li>
-        <li  >
-          <a class="navigation-link eco-standarts" href="#">
+        <li class="navigation-item eco-standarts">
+          <a class="navigation-link" href="#">
             Экологические стандарты
           </a>
         </li>

@@ -12,12 +12,23 @@
     <header class="page-header">
     <div class="page-container">
     <nav class="navigation">
-      <img src="images/logo.svg" width="137" height="56" alt="Логотип «Глейси»" class="logo-main">
+      <a class="logo-main" href="index.html">
+        <img src="images/logo.svg" width="137" height="56" alt="Логотип «Глейси»" class="logo-main">
+      </a>
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">
             Каталог
           </a>
+          <div class="popover-catalog popover">
+            <ul>
+              <li class="popover-catalog-main-element popover-catalog-element"><a>Новинки</a></li>
+              <li class="popover-catalog-element"><a>Сливочное</a></li>
+              <li class="popover-catalog-element"><a>Щербеты</a></li>
+              <li class="popover-catalog-element"><a>Фруктовый лед</a></li>
+              <li class="popover-catalog-element"><a>Мелорин</a></li>
+            </ul>
+          </div>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
@@ -42,33 +53,88 @@
         <li class="navigation-item">
           <a class="navigation-link user-navigation-link user-interface-search" href="#">
             
-             <image src="images/search_icon.svg">
+             <img src="images/search_icon.svg" alt="Поиск">
             
           </a>
+          <div class="popover-search popover">
+            <div class="popover-search-content">
+            <input class="popover-search-input form-input " placeholder="Поиск по сайту">
+            <img class="popover-search-img popover-cross" src="images/Cross.svg" alt="X" >
+          </div>
+          </div>
+          
         </li>
         <li class="navigation-item">
           <a class="navigation-link user-navigation-link " href="#">
             
-              <image src="images/login_icon.svg">
+              <img src="images/login_icon.svg" alt="Логин">
               <p>Вход</p>
            
           </a>
+          <div class="popover popover-login">
+            <div class="popover-login-content">
+            <h3>
+              Личный кабинет
+            </h3>
+            <input type="email" class="form-input" placeholder="email@example.com">
+            <input type="password" class="form-input" placeholder="••••••">
+            <div class="popover-login-user">
+            <button class="button-light button-login">Войти</button>
+            <div class="popover-login-a">
+            <a>Забыли пароль</a>
+            <a>Регистрация</a>
+            </div>
+          </div>
+          </div>
+          </div>
         </li>
         <li class="navigation-item">
           <a class="navigation-link user-navigation-link" href="#">
-          
-              <image src="images/shopping_cart_icon_empty.svg">
+                <img src="images/shopping_cart_icon_empty.svg" alt="Корзина">
                 <p>Пусто</p>
-           
           </a>
+          
         </li>
+        
         <li class="navigation-item">
           <a class="navigation-link user-navigation-link" href="#">
-            
-             <image src="images/shopping_cart_icon_full.svg">
-              <p>100 товаров</p>
-         
+             <img src="images/shopping_cart_icon_full.svg" alt="Корзина">
+              <p>100 товаров</p> 
           </a>
+          <div class="popover popover-cart">
+            <div class="popover-content">
+              <h3 class="popover-title">Корзина</h3>
+              <ul class="popover-list">
+                <li class="popover-item">
+                  <img class="popover-image" src="images/Малинка.png" alt="Малинка" >
+                  <div class="popover-product">
+                    <h6 class="popover-product-name">Малинка</h6>
+                    <p class="popover-description">1 кг х 310 ₽</p>
+                  </div>
+                  <h6 class="popover-price">310 ₽</h6>
+                  <img class="popover-cross" src="images/Cross.svg" alt="Х" >
+                </li>
+                <li>
+                  <li class="popover-item">
+                    <img class="popover-image" src="images/Бабл-гам.png" alt="Бабл-гам" >
+                    <div class="popover-product">
+                      <h6 class="popover-product-name">Малинка</h6>
+                      <p class="popover-description">1,5 кг х 320 ₽</p>
+                    </div>
+                    <h6 class="popover-price">480 ₽</h6>
+                    <img class="popover-cross" src="images/Cross.svg" alt="Х" >
+                </li>
+              </ul>
+            </div>
+            
+            <div class="popover-final">
+            <button class="button-light">Оформить заказ</button>
+            <h6>Итого: 790 ₽</h6>
+          </div>
+        </div>
+        <div class="popover-empty popover">
+          <h3 class="popover-empty-content">Ваша корзина пока пуста</h3>
+        </div>
         </li>
       </ul>
     </nav>
@@ -271,7 +337,7 @@
         в курсе всего самого вкусного, что у нас происходит. Обещаем 
         не спамить и не слать всякой ненужной ерунды. Честно =)</p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input type="email" class="email" id="subcscription-email" name="subcscription-email" placeholder="email@example.com">
+        <input type="email" class="form-input" id="subcscription-email" name="subcscription-email" placeholder="email@example.com">
         <button class="subcription-form button-light button-light-submit" type="submit">Отправить</button>
       </form>
     </div>
@@ -287,16 +353,19 @@
         <p class="delivery-field delivery-form-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
         <p class="delivery-field delivery-form-date>">
           <label for="delivery-date">Дата</label>
-          <input class="delivery-input delivery-input-date" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" >
+          <input class="form-input delivery-input-date" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" >
         </p>
         
         <p class="delivery-field delivery-form-phone">
           <label for="delivery-phone">Телефон</label>
-          <input class="delivery-input delivery-input-phone" type="tel" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
+          <input class="form-input delivery-input-phone" type="tel" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
         </p>
         <p class="delivery-field delivery-form-address">
-          <label for="delivery-address">Адрес</label>
-          <input class="delivery-input delivery-input-address" type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
+          <label for="delivery-address">
+            Адрес
+            <img src="images/Tooltip.svg" alt="i">
+          </label>
+          <input class="form-input delivery-input-address" type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
         </p>
           <button class="delivery-form-button button-light button-light-submit" type="submit">Отправить</button>
 
@@ -345,7 +414,7 @@
         
         <li class="navigation-item">
           <a class="navigation-link for-suppliers" href="#">
-            <img src="images/Heart.svg" class="footer-heart">   
+            <img src="images/Heart.svg" class="footer-heart" alt="">   
             Для поставщиков
           </a>
         </li>
@@ -378,5 +447,23 @@
     </section>
   </div>
   </footer>
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-feedback">
+      <button class="modal-close-button">
+        <img class="popover-cross" src="images/Cross.svg" alt="X">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h3 class="modal-title">Мы обязательно ответим вам!</h3>
+        <input class="form-input" placeholder="Имя и фамилия">
+        <input class="form-input" placeholder="email@example.com">
+        <textarea class="modal-free-form form-input" placeholder="В свободной форме"></textarea>
+      
+       
+        <button class="button-light">Отправить</button>
+      </section>
+
+    </div>
+  </div>
   </body>
 </html>
