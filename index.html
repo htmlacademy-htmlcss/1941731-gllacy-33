@@ -13,7 +13,7 @@
     <div class="page-container">
     <nav class="navigation">
       <a class="logo-main" href="index.html">
-        <img src="images/logo.svg" width="137" height="56" alt="Логотип «Глейси»" class="logo-main">
+        <img class="logo-main" src="images/logo.svg" width="137" height="56" alt="Логотип «Глейси»" >
       </a>
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -71,22 +71,24 @@
               <p>Вход</p>
            
           </a>
-          <div class="popover popover-login">
+          <form class="popover popover-login" action="https://echo.htmlacademy.ru/" method="post">
             <div class="popover-login-content">
-            <h3>
-              Личный кабинет
-            </h3>
-            <input type="email" class="form-input" placeholder="email@example.com">
-            <input type="password" class="form-input" placeholder="••••••">
-            <div class="popover-login-user">
-            <button class="button-light button-login">Войти</button>
-            <div class="popover-login-a">
-            <a>Забыли пароль</a>
-            <a>Регистрация</a>
-            </div>
+              <h3>
+                Личный кабинет
+              </h3>
+              <label class="visually-hidden" for="login">Логин</label>
+              <input class="form-input" type="email" id="login" name="login" placeholder="email@example.com">
+              <label class="visually-hidden" for="password">Пароль</label>
+              <input class="form-input" type="password"  id="password" name="password" placeholder="••••••">
+              <div class="popover-login-user">
+                <button class="button-light button-login" type="submit">Войти</button>
+                <div class="popover-login-a">
+                <a>Забыли пароль</a>
+                <a>Регистрация</a>
+              </div>
           </div>
           </div>
-          </div>
+        </form>
         </li>
         <li class="navigation-item">
           <a class="navigation-link user-navigation-link" href="#">
@@ -173,11 +175,11 @@
       
        <div class="slider-container">
         <a class="slider-button slider-prev" href="#" > 
-          <img src="images/Arrow-left.svg" class="arrow-image" alt="Предыдущий слайд">
+          <img class="arrow-image" src="images/Arrow-left.svg" alt="Предыдущий слайд">
          </a>
       <img class="slider-image" width="306" height="507" src="images/ice_cream_strawberry_jam_full.png" alt="Фото мороженого, основной слайд">
       <a class="slider-button slider-next" href="#">
-        <img src="images/Arrow-right.svg" class="arrow-image"  alt="Следующий слайд">
+        <img class="arrow-image" src="images/Arrow-right.svg"  alt="Следующий слайд">
        </a> 
     </div>
       
@@ -195,9 +197,9 @@
     </section>
     <div class="dot-pagination">
      
-      <button type="button" name="dot-pagination" class="dot-pagination-active dot-pagination-button"></button>
-      <button type="button" name="dot-pagination" class="dot-pagination-inactive dot-pagination-button"></button>
-      <button type="button" name="dot-pagination" class="dot-pagination-inactive dot-pagination-button"></button>
+      <button class="dot-pagination-active dot-pagination-button" type="button" name="dot-pagination" ></button>
+      <button class="dot-pagination-inactive dot-pagination-button" type="button" name="dot-pagination"></button>
+      <button class="dot-pagination-inactive dot-pagination-button" type="button" name="dot-pagination"></button>
     </div>
     <section class="social-networks">
       <h2 class="visually-hidden">Социальные сети</h2>
@@ -221,7 +223,7 @@
     </section>
   </section>
     <section class="banners">
-      <h2 class="banners-name">Заказывайте мороженое и получайте подарки!</h2>
+      <h2 class="banners-name">Заказывайте мороженое<br> и получайте подарки!</h2>
       <ul class="banners-list">
         <li class="banners-item">
          
@@ -243,7 +245,7 @@
       </ul>
     </section>
     <section class="popular-products">
-      <h2 class="popular-products-name">Попробуйте самые популярные вкусы нашего мороженого</h2>
+      <h2 class="popular-products-name">Попробуйте самые популярные<br> вкусы нашего мороженого</h2>
       <ul class="catalog-list">
      
         <li class="product-card">
@@ -337,7 +339,8 @@
         в курсе всего самого вкусного, что у нас происходит. Обещаем 
         не спамить и не слать всякой ненужной ерунды. Честно =)</p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input type="email" class="form-input" id="subcscription-email" name="subcscription-email" placeholder="email@example.com">
+        <label class="visually-hidden" for="subcscription-email">E-mail</label>
+        <input class="form-input" type="email"  id="subcscription-email" name="subcscription-email" placeholder="email@example.com">
         <button class="subcription-form button-light button-light-submit" type="submit">Отправить</button>
       </form>
     </div>
@@ -394,17 +397,17 @@
       <ul class="social-networks-list">
         <li class="social-networks-item">
           
-            <a href="https://vk.com/htmlacademy" class="social-networks-link"  ><img  src="images/VK.svg"  alt="VK"></a>
+            <a class="social-networks-link" href="https://vk.com/htmlacademy"><img src="images/VK.svg"  alt="VK"></a>
           
         </li>
         <li class="social-networks-item">
           
-           <a href="https://www.facebook.com/htmlacademy" class="social-networks-link"> <img   src="images/Facebook.svg"  alt="Facebook"> </a>
+           <a class="social-networks-link" href="https://www.facebook.com/htmlacademy"> <img src="images/Facebook.svg"  alt="Facebook"> </a>
           
         </li>
         <li class="social-networks-item">
           
-           <a href="https://www.instagram.com/htmlacademy/" class="social-networks-link" > <img  src="images/insta.svg"  alt="instagram"></a>
+           <a class="social-networks-link" href="https://www.instagram.com/htmlacademy/"> <img src="images/insta.svg"  alt="instagram"></a>
          
         </li>
       </ul>
@@ -414,7 +417,7 @@
         
         <li class="navigation-item">
           <a class="navigation-link for-suppliers" href="#">
-            <img src="images/Heart.svg" class="footer-heart" alt="">   
+            <img class="footer-heart" src="images/Heart.svg"  alt="">   
             Для поставщиков
           </a>
         </li>
@@ -455,8 +458,10 @@
       </button>
       <section class="modal-content">
         <h3 class="modal-title">Мы обязательно ответим вам!</h3>
-        <input class="form-input" placeholder="Имя и фамилия">
-        <input class="form-input" placeholder="email@example.com">
+        <label class="visually-hidden" for="full-name">Имя и фамилия</label>
+        <input class="form-input" placeholder="Имя и фамилия" id="full-name">
+        <label class="visually-hidden" for="email">E-mail</label>
+        <input class="form-input" placeholder="email@example.com" id="email">
         <textarea class="modal-free-form form-input" placeholder="В свободной форме"></textarea>
       
        
