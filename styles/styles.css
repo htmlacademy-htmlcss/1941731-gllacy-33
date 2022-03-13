@@ -61,7 +61,7 @@ button {
   outline: 4px solid rgba(252, 252, 252, 0.4);
   border-radius: 26px;
   box-sizing: border-box;
-  height: 52px;
+  max-height: 52px;
 }
 button:hover {
   background: rgba(252, 252, 252, 0.4);
@@ -628,7 +628,7 @@ header {
 }
 .navigation {
   display: flex;
-  height: 104px;
+  min-height: 104px;
 }
 .navigation-list {
   width: 400px;
@@ -890,7 +890,7 @@ header {
   grid-template-columns: auto auto;
   row-gap: 8px;
   column-gap: 24px;
-  grid-template-rows: 20px 20px;
+  grid-template-rows: min-content min-content;
 }
 
 .navigation-footer .navigation-link {
@@ -961,7 +961,7 @@ header {
 .product-card {
   box-sizing: border-box;
   width: 270px;
-  height: 281px;
+  max-height: 281px;
   background-color: #fcfcfc;
   display: grid;
   grid-template-columns: auto auto;
@@ -983,6 +983,7 @@ header {
   width: 190px;
   margin-top: 0;
   margin-bottom: 20px;
+  min-height: 44px;
 }
 .product-card-price {
   grid-row: 3/4;
