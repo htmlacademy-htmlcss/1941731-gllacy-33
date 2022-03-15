@@ -270,24 +270,24 @@ body {
 .control-input[type="checkbox"] + .control-mark {
   border: 0;
   border-radius: 0;
-  background-image: url("../images/Checkbox-off.svg");
+  background-image: url("../images/checkbox/Checkbox-off.svg");
 }
 .control-input[type="checkbox"]:checked + .control-mark {
   border: 0;
   border-radius: 0;
-  background-image: url("../images/Checkbox-on.svg");
+  background-image: url("../images/checkbox/Checkbox-on.svg");
 }
 .control-input[type="checkbox"]:checked:hover + .control-mark {
-  background-image: url("../images/Checkbox-on-hover.svg");
+  background-image: url("../images/checkbox/Checkbox-on-hover.svg");
 }
 .control-input[type="checkbox"]:hover + .control-mark {
-  background-image: url("../images/Checkbox-off-hover.svg");
+  background-image: url("../images/checkbox/Checkbox-off-hover.svg");
 }
 .control-input[type="checkbox"]:checked:disabled + .control-mark {
-  background-image: url("../images/Checkbox-on-disabled.svg");
+  background-image: url("../images/checkbox/Checkbox-on-disabled.svg");
 }
 .control-input[type="checkbox"]:disabled + .control-mark {
-  background-image: url("../images/Checkbox-off-disabled.svg");
+  background-image: url("../images/checkbox/Checkbox-off-disabled.svg");
 }
 .popover {
   position: absolute;
@@ -792,6 +792,7 @@ header {
   border-radius: 26px;
 }
 .dot-pagination-button {
+  border-radius: 50%;
   outline: 0;
 }
 .dot-pagination-active:hover {
@@ -1069,7 +1070,7 @@ header {
   max-width: 442px;
 }
 .seo {
-  background-image: url("../images/waffle_background.jpg");
+  background-image: url("../images/backgrounds/waffle_background.jpg");
   padding: 24px;
   border-radius: 16px;
 }
@@ -1415,7 +1416,7 @@ footer .navigation {
   border-bottom: solid 1px #2d3440;
 }
 .breadcrumbs-img {
-  margin-bottom: 3px;
+  margin-left: 5px;
 }
 .breadcrumbs {
   font-weight: 700;
@@ -1470,28 +1471,28 @@ a {
 }
 
 .news {
-  background-image: url("../images/background_news.jpg");
+  background-image: url("../images/backgrounds/background_news.jpg");
   border-radius: 16px;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #fcfcfc;
 }
 .subscription {
-  background-image: url("../images/email_background.jpg");
+  background-image: url("../images/backgrounds/email_background.jpg");
   border-radius: 16px;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #fcfcfc;
 }
 .delivery {
-  background-image: url("../images/delivery_background.jpg");
+  background-image: url("../images/backgrounds/delivery_background.jpg");
   border-radius: 16px;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #fcfcfc;
 }
 .feedback {
-  background-image: url("../images/feedback_background.jpg");
+  background-image: url("../images/backgrounds/feedback_background.jpg");
   border-radius: 16px;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -1539,4 +1540,8 @@ a {
   margin-bottom: 28px;
   font-size: 14px;
   line-height: 20px;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
 }
