@@ -5,18 +5,21 @@
     <title>HTML Academy: Глейси</title>
 
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logos/favicon.png">
   </head>
  
   <body class="first-slide">
     <header class="page-header">
       <div class="page-container">
       <nav class="navigation">
-      <a class="logo-main" href="index.html">
-        <img src="images/logo.svg" width="137" height="56" alt="Логотип «Глейси»" class="logo-main">
-      </a>
+        <a class="logo-main" href="index.html">
+          <span class="visually-hidden">Логотип</span>
+          <img class="logo-main" src="images/logos/logo.svg" width="137" height="56" alt="Логотип «Глейси»" >
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">
+            <a class="navigation-link navigation-link-main navigation-current" href="catalog.html">
               Каталог
             </a>
             <div class="popover-catalog popover">
@@ -30,12 +33,12 @@
             </div>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link navigation-link-main" href="#">
               Доставка и оплата
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link navigation-link-main" href="#">
               О компании
             </a>
           </li>
@@ -51,45 +54,45 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link user-navigation-link user-interface-search" href="#">
-              
-               <img src="images/search_icon.svg" alt="Поиск">
+              <span class="visually-hidden">Поиск</span>
+               <img src="images/icons/search_icon.svg" alt="Поиск">
               
             </a>
             <div class="popover-search popover">
               <div class="popover-search-content">
               <input class="popover-search-input form-input " placeholder="Поиск по сайту">
-              <img class="popover-search-img popover-cross" src="images/Cross.svg" alt="X" >
+              <img class="popover-search-img popover-cross" src="images/icons/Cross.svg" alt="X" >
             </div>
             </div>
             
           </li>
           <li class="navigation-item">
             <a class="navigation-link user-navigation-link " href="#">
-              
-                <img src="images/login_icon.svg" alt="Логин">
-                <p>Вход</p>
-             
+                <img src="images/icons/login_icon.svg" alt="Логин">
+                <p>Вход</p>       
             </a>
-            <div class="popover popover-login">
+            <form class="popover popover-login" action="https://echo.htmlacademy.ru/" method="post">
               <div class="popover-login-content">
-              <h3>
-                Личный кабинет
-              </h3>
-              <input type="email" class="form-input" placeholder="email@example.com">
-              <input type="password" class="form-input" placeholder="••••••">
-              <div class="popover-login-user">
-              <button class="button-light button-login">Войти</button>
-              <div class="popover-login-a">
-              <a>Забыли пароль</a>
-              <a>Регистрация</a>
-              </div>
+                <h3>
+                  Личный кабинет
+                </h3>
+                <label class="visually-hidden" for="login">Логин</label>
+                <input class="form-input" type="email" id="login" name="login" placeholder="email@example.com">
+                <label class="visually-hidden" for="password">Пароль</label>
+                <input class="form-input" type="password"  id="password" name="password" placeholder="••••••">
+                <div class="popover-login-user">
+                  <button class="button-light button-login" type="submit">Войти</button>
+                  <div class="popover-login-a">
+                  <a>Забыли пароль</a>
+                  <a>Регистрация</a>
+                </div>
             </div>
             </div>
-            </div>
+          </form>
           </li>
           <li class="navigation-item">
             <a class="navigation-link user-navigation-link" href="#">
-                  <img src="images/shopping_cart_icon_empty.svg" alt="Корзина">
+                  <img src="images/icons/shopping_cart_icon_empty.svg" alt="Корзина">
                   <p>Пусто</p>
             </a>
             
@@ -97,7 +100,7 @@
           
           <li class="navigation-item">
             <a class="navigation-link user-navigation-link" href="#">
-               <img src="images/shopping_cart_icon_full.svg" alt="Корзина">
+               <img src="images/icons/shopping_cart_icon_full.svg" alt="Корзина">
                 <p>100 товаров</p> 
             </a>
             <div class="popover popover-cart">
@@ -105,23 +108,23 @@
                 <h3 class="popover-title">Корзина</h3>
                 <ul class="popover-list">
                   <li class="popover-item">
-                    <img class="popover-image" src="images/Малинка.png" alt="Малинка" >
+                    <img class="popover-image" src="images/products/Raspberries.png" alt="Малинка" >
                     <div class="popover-product">
                       <h6 class="popover-product-name">Малинка</h6>
                       <p class="popover-description">1 кг х 310 ₽</p>
                     </div>
                     <h6 class="popover-price">310 ₽</h6>
-                    <img class="popover-cross" src="images/Cross.svg" alt="Х" >
+                    <img class="popover-cross" src="images/icons/Cross.svg" alt="Х" >
                   </li>
                   <li>
                     <li class="popover-item">
-                      <img class="popover-image" src="images/Бабл-гам.png" alt="Бабл-гам" >
+                      <img class="popover-image" src="images/products/Bubble-gum.png" alt="Бабл-гам" >
                       <div class="popover-product">
-                        <h6 class="popover-product-name">Малинка</h6>
+                        <h6 class="popover-product-name">Бабл-гам</h6>
                         <p class="popover-description">1,5 кг х 320 ₽</p>
                       </div>
                       <h6 class="popover-price">480 ₽</h6>
-                      <img class="popover-cross" src="images/Cross.svg" alt="Х" >
+                      <img class="popover-cross" src="images/icons/Cross.svg" alt="Х" >
                   </li>
                 </ul>
               </div>
@@ -146,16 +149,14 @@
        <ul class="breadcrumbs">
            <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">Главная</a>
+              <a href="index.html"><img class="breadcrumbs-img" src="images/icons/chevrons-right.svg"  alt="Угловые скобки"></a>
            </li>
-           <li class="breadcrumbs-item">
-             <img src="images/chevrons-right.svg" class="breadcrumbs-img" alt="">
-           </li>
+
            <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
+            <a href="catalog.html"><img class="breadcrumbs-img" src="images/icons/chevrons-right.svg"  alt="Угловые скобки"></a>
            </li>
-           <li class="breadcrumbs-item">
-            <img src="images/chevrons-right.svg" class="breadcrumbs-img" alt="">
-          </li>
+
             <li class="breadcrumbs-item">
                 <span class="breadcrumbs-link-current" >Сливочное</span>
             </li>
@@ -173,13 +174,14 @@
             <option value="cheap">Сначала дешёвое</option>
             <option value="expensive">Сначала дорогое</option>
         </select>
-        <!-- <img class="select-image" src="images/Arrow-down.svg" alt=""> -->
+      
         </div>
         <fieldset class="catalog-filter-group">
          
           <div class="range-wrapper-inputs">
-            Цена:
+            
             <label class="catalog-filter-label">
+              Цена:
                <input class="range-input" type="number" value="100" name="min-price"> ₽
             </label>
             <label class="catalog-filter-label">
@@ -189,10 +191,10 @@
           <div class="range">
             <div class="range-scale filter-element">
               <div class="range-bar" style="left:40px; width:56px" >
-                <button class="range-toggle toggle-min">
+                <button class="range-toggle toggle-min" type="button">
                   <span class="visually-hidden">Изменить минимальную цену.</span>
                 </button>
-                <button class="range-toggle toggle-max">
+                <button class="range-toggle toggle-max" type="button">
                   <span class="visually-hidden">Изменить максимальную цену.</span>
                 </button>
               </div>
@@ -260,141 +262,140 @@
         <button class="button-filter filter-element" type="submit">Применить</button>
     </form>
     
-    <ul class="catalog-list catalog-list-inner">
-     
+    <ul class="catalog-list-inner">   
+       
     <li class="product-card">
+      
       <div class="card-container">
         <a class="product-card-link" href="#">
-            <img class="product-card-image" height="168" width="168" src="images/Малинка.png" alt="Мороженое малинка">
+            <img class="product-card-image" height="168" width="168" src="images/products/Raspberries.png" alt="Мороженое малинка">
             <h4 class="product-card-title">Малинка</h4>    
         </a>
         <p class="product-card-description">Сливочное мороженое с малиновым джемом</p>
         <b class="product-card-price">310 ₽/кг</b>
-        <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button> 
+        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a> 
       </div>
     </li>
     <li class="product-card">
       <div class="card-container">
         <a class="product-card-link" href="#">
-            <img class="product-card-image" height="168" width="168" src="images/Фисташка.png" alt="Мороженое фисташка">
+            <img class="product-card-image" height="168" width="168" src="images/products/Pistachio.png" alt="Мороженое фисташка">
             <h4 class="product-card-title">Фисташка</h4>    
         </a>
         <p class="product-card-description">Фисташковый пломбир с кусочками шоколада</p>
         <b class="product-card-price">340 ₽/кг</b>
-        <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
+        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a> 
       </div>
     </li>
     <li class="product-card">
       <div class="card-container">
         <a class="product-card-link" href="#">
-            <img class="product-card-image" height="168" width="168" src="images/Черника.png" alt="Мороженое черника">
+            <img class="product-card-image" height="168" width="168" src="images/products/Blueberry.png" alt="Мороженое черника">
             <h4 class="product-card-title">Черника</h4>    
         </a>
         <p class="product-card-description">Крем-брюле с черничным джемом</p>
         <b class="product-card-price">330 ₽/кг</b>
-        <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
+        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a> 
       </div>
     </li>
     <li class="product-card">
       <div class="card-container">
         <a class="product-card-link" href="#">
-            <img class="product-card-image" height="168" width="168" src="images/Бабл-гам.png" alt="Мороженое Бабл-гам">
+            <img class="product-card-image" height="168" width="168" src="images/products/Bubble-gum.png" alt="Мороженое Бабл-гам">
             <h4 class="product-card-title">Бабл-гам</h4>    
         </a>
         <p class="product-card-description">Ванильный пломбир со сладкой посыпкой</p>
         <b class="product-card-price">320 ₽/кг</b>
-        <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
+        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a> 
       </div>
     </li>
-
-
         <li class="product-card">
           <div class="card-container">
             <a class="product-card-link" href="#">
-                <img class="product-card-image" height="168" width="168" src="images/Ежевика.png" alt="Мороженое ежевика">
+                <img class="product-card-image" height="168" width="168" src="images/products/Blackberry.png" alt="Мороженое ежевика">
                 <h4 class="product-card-title">Ежевика</h4>    
             </a>
             <p class="product-card-description">Сливочное мороженое с ежевичным джемом</p>
             <b class="product-card-price">330 ₽/кг</b>
-            <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
+            <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a> 
           </div>
         </li>
         <li class="product-card">
           <div class="card-container">
             <a class="product-card-link"  href="#">
-                <img class="product-card-image" height="168" width="168" src="images/Банан.png" alt="Мороженое банан">
+                <img class="product-card-image" height="168" width="168" src="images/products/Banana.png" alt="Мороженое банан">
                 <h4 class="product-card-title">Банан</h4>    
             </a>
             <p class="product-card-description">Сливочный пломбир с банановым вкусом</p>
             <b class="product-card-price">340 ₽/кг</b>
-            <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button> 
+            <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a> 
           </div>
         </li>
         <li class="product-card">
           <div class="card-container">
             <a class="product-card-link" href="#">
-                <img class="product-card-image" height="168" width="168" src="images/Шоколадка.png" alt="Мороженое шоколадка">
+                <img class="product-card-image" height="168" width="168" src="images/products/Chocolate.png" alt="Мороженое шоколадка">
                 <h4 class="product-card-title">Шоколадка</h4>    
             </a>
             <p class="product-card-description">Классический шоколадный пломбир</p>
             <b class="product-card-price">270 ₽/кг</b>
-            <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
+            <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a> 
           </div>
         </li>
         <li class="product-card">
           <div class="card-container">
             <a class="product-card-link" href="#">
-                <img class="product-card-image" height="168" width="168" src="images/Клубничка.png" alt="Мороженое клубничка">
+                <img class="product-card-image" height="168" width="168" src="images/products/Strawberry.png" alt="Мороженое клубничка">
                 <h4 class="product-card-title">Клубничка</h4>    
             </a>
             <p class="product-card-description">Сливочный пломбир с клубничным вкусом</p>
             <b class="product-card-price">300 ₽/кг</b>
-            <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
+            <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a> 
           </div>
         </li>
   
             <li class="product-card">
               <div class="card-container">
                 <a class="product-card-link" href="#">
-                    <img class="product-card-image" height="168" width="168" src="images/Лимон.png" alt="Мороженое лимон">
+                    <img class="product-card-image" height="168" width="168" src="images/products/Lemon.png" alt="Мороженое лимон">
                     <h4 class="product-card-title">Лимон</h4>    
                 </a>
                 <p class="product-card-description">Освежающий лимонный сорбет</p>
                 <b class="product-card-price">310 ₽/кг</b>
-                <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
+                <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a> 
               </div>
             </li>
             <li class="product-card">
               <div class="card-container">
                 <a class="product-card-link" href="#">
-                    <img class="product-card-image" height="168" width="168" src="images/Ментол.png" alt="Мороженое ментол">
+                    <img class="product-card-image" height="168" width="168" src="images/products/Menthol.png" alt="Мороженое ментол">
                     <h4 class="product-card-title">Ментол</h4>    
                 </a>
                 <p class="product-card-description">Сливочный пломбир с ментоловым сиропом</p>
                 <b class="product-card-price">320 ₽/кг</b>
-                <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
+                <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a> 
               </div>
             </li>
             <li class="product-card">
               <div class="card-container">
                 <a class="product-card-link" href="#">
-                    <img class="product-card-image" height="168" width="168" src="images/Орешек.png" alt="Мороженое орешек">
+                    <img class="product-card-image" height="168" width="168" src="images/products/Nut.png" alt="Мороженое орешек">
                     <h4 class="product-card-title">Орешек</h4>    
                 </a>
                 <p class="product-card-description">Фисташковый пломбир с шоколадным сиропом</p>
                 <b class="product-card-price">360 ₽/кг</b>
-                <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
+                <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a> 
               </div>
             </li>
             <li class="product-card">
               <div class="card-container">
                 <a class="product-card-link" href="#">
-                    <img class="product-card-image" height="168" width="168" src="images/Крем-брюле.png" alt="Мороженое крем-брюле">
+                    <img class="product-card-image" height="168" width="168" src="images/products/Creme-brulee.png" alt="Мороженое крем-брюле">
                     <h4 class="product-card-title">Крем-брюле</h4>    
                 </a>
                 <p class="product-card-description">Классическое крем-брюле</p>
                 <b class="product-card-price">280 ₽/кг</b>
-                <button class="button-add-to-shopping-cart" type="button"><img src="images/cart-light.svg" alt="Корзина"></button>
+                <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a> 
               </div>
             </li>
         </ul>
@@ -405,27 +406,34 @@
           
             <li >
               <a class="pagination-link disabled" href="#" >
-                <img src="images/Arrow-left-dark.svg" alt="Предыдущая страница" >
+                <span class="visually-hidden">Предыдущая страница</span>
+                <img src="images/slider/Arrow-left-dark.svg" alt="Предыдущая страница" >
               </a>
            </li>
             <li class="pagination-item">
+              <span class="visually-hidden">Первая страница</span>
                 <a class="pagination-link  pagination-current">1</a>
             </li>
             <li class="pagination-item ">
+              <span class="visually-hidden">Вторая страница</span>
                 <a class="pagination-link pagination-past" href="#">2</a>
             </li>
             <li class="pagination-item ">
+              <span class="visually-hidden">Третья страница</span>
                 <a class="pagination-link pagination-past" href="#">3</a>
             </li>
             <li class="pagination-item ">
+              <span class="visually-hidden">Четвертая страница</span>
                 <a class="pagination-link pagination-past" href="#">4</a>
             </li>
             <li class="pagination-item ">
+              <span class="visually-hidden">Пятая страница</span>
                 <a class="pagination-link pagination-past" href="#">5</a>              
             </li>
             <li >
               <a  href="#">
-                <img src="images/Arrow-right-dark.svg" class="pagination-arrow-right" alt="Следующая страница" >
+                <span class="visually-hidden">Следующая страница</span>
+                <img src="images/slider/Arrow-right-dark.svg" class="pagination-arrow-right" alt="Следующая страница" >
               </a>
              </li>
             
@@ -444,19 +452,28 @@
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social-networks-list">
         <li class="social-networks-item">
-          
-            <a href="https://vk.com/htmlacademy" class="social-networks-link"  ><img  src="images/VK.svg"  alt="VK"></a>
-          
+            <a  class="social-networks-link" href="https://vk.com/htmlacademy" >
+              <span class="visually-hidden">
+                Ссылка на Вконтакте
+              </span>
+              <img class="social-networks-image"  src="images/icons/VK.svg"  alt="VK">
+            </a>
         </li>
         <li class="social-networks-item">
-          
-           <a href="https://www.facebook.com/htmlacademy" class="social-networks-link"> <img   src="images/Facebook.svg"  alt="Facebook"> </a>
-          
+           <a  class="social-networks-link" href="https://www.facebook.com/htmlacademy">
+             <span class="visually-hidden">
+               Ссылка на Фейсбук
+              </span> 
+            <img  src="images/icons/Facebook.svg"  alt="Facebook"> 
+          </a>
         </li>
-        <li class="social-networks-item">
-          
-           <a href="https://www.instagram.com/htmlacademy/" class="social-networks-link" > <img  src="images/insta.svg"  alt="instagram"></a>
-         
+        <li class="social-networks-item">          
+           <a class="social-networks-link" href="https://www.instagram.com/htmlacademy/">
+             <span class="visually-hidden">
+               Ссылка на Инстаграм
+              </span> 
+             <img   src="images/icons/insta.svg"  alt="instagram">
+          </a>         
         </li>
       </ul>
     </section>
@@ -465,7 +482,7 @@
         
         <li class="navigation-item">
           <a class="navigation-link for-suppliers" href="#">
-            <img src="images/Heart.svg" class="footer-heart" alt="">   
+            <img class="footer-heart" src="images/icons/Heart.svg"  alt="Сердечко">   
             Для поставщиков
           </a>
         </li>
@@ -490,7 +507,7 @@
     <section class="made-by">
       <h2 class="visually-hidden">Информация о разработчике</h2>
       <figure>
-        <a href="https://htmlacademy.ru/"><img class="academy-logo" src="images/logo_htmlacademy.svg" alt="логотип Академии"></a>
+        <a href="https://htmlacademy.ru/"><img class="academy-logo" src="images/logos/logo_htmlacademy.svg" alt="логотип Академии"></a>
         <figcaption class="made-by-academy">Сделано в <a href="https://htmlacademy.ru/">.html academy</a> © 2021</figcaption>
       </figure>
       
@@ -500,3 +517,4 @@
   </footer>
   </body>
 </html>
+
