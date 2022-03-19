@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/logos/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
   </head>
 
   <body class="first-slide">
@@ -18,7 +18,7 @@
 
           <a class="logo-main" href="index.html">
             <span class="visually-hidden">Логотип</span>
-            <img class="logo-main" src="images/logos/logo.svg" width="137" height="56" alt="Логотип «Глейси»" >
+            <img class="logo_main" src="images/logos/logo.svg" width="137" height="56" alt="Логотип «Глейси»" >
           </a>
 
           <ul class="navigation-list">
@@ -65,12 +65,13 @@
                 <span class="visually-hidden">Поиск</span>
                 <img src="images/icons/search_icon.svg" alt="Поиск">
               </a>
-              <div class="popover-search popover">
-                <div class="popover-search-content">
-                <input class="popover-search-input form-input " placeholder="Поиск по сайту">
-                <img class="popover-search-img popover-cross" src="images/icons/Cross.svg" alt="X" >
+              <form class="popover-search popover" action="https://echo.htmlacademy.ru/" method="post">
+                <div class="popover-search-content" tabindex="0">
+                  <label class="visually-hidden" for="search-request">Поисковый запрос</label>
+                  <input class="popover-search-input form-input" id="search-request" name="search-request" placeholder="Поиск по сайту">
+                  <img class="popover-search-img popover-cross" src="images/icons/Cross.svg" alt="X" >
                 </div>
-              </div>
+              </form>
             </li>
 
             <li class="navigation-item">
@@ -85,9 +86,9 @@
                     Личный кабинет
                   </h3>
                   <label class="visually-hidden" for="login">Логин</label>
-                  <input class="form-input" type="email" id="login" name="login" placeholder="email@example.com">
+                  <input class="form-input" type="email" id="login" name="login" placeholder="email@example.com" required>
                   <label class="visually-hidden" for="password">Пароль</label>
-                  <input class="form-input" type="password"  id="password" name="password" placeholder="••••••">
+                  <input class="form-input" type="password"  id="password" name="password" placeholder="••••••" required>
                   <div class="popover-login-user">
                     <button class="button-light button-login" type="submit">Войти</button>
                     <div class="popover-login-a">
@@ -102,15 +103,8 @@
 
             <li class="navigation-item">
               <a class="navigation-link user-navigation-link" href="#">
-                    <img src="images/icons/shopping_cart_icon_empty.svg" alt="Корзина">
-                    <p>Пусто</p>
-              </a>
-            </li>
-
-            <li class="navigation-item">
-              <a class="navigation-link user-navigation-link" href="#">
                 <img src="images/icons/shopping_cart_icon_full.svg" alt="Корзина">
-                  <p>100 товаров</p>
+                  <p>2 товара</p>
               </a>
 
               <div class="popover popover-cart">
@@ -130,7 +124,7 @@
 
                     <li>
                       <li class="popover-item">
-                        <img class="popover-image" src="images/products/Bubble-gum.png" alt="Бабл-гам" >
+                        <img class="popover-image" src="images/products/Bubble_gum.png" alt="Бабл-гам" >
                         <div class="popover-product">
                           <h6 class="popover-product-name">Бабл-гам</h6>
                           <p class="popover-description">1,5 кг х 320 ₽</p>
@@ -164,12 +158,12 @@
 
               <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link" href="index.html">Главная</a>
-                  <a href="index.html"><img class="breadcrumbs-img" src="images/icons/chevrons-right.svg"  alt="Угловые скобки"></a>
+                  <a href="index.html"><img class="breadcrumbs-img" src="images/icons/chevrons_right.svg"  alt="Угловые скобки"></a>
               </li>
 
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
-                <a href="catalog.html"><img class="breadcrumbs-img" src="images/icons/chevrons-right.svg"  alt="Угловые скобки"></a>
+                <a href="catalog.html"><img class="breadcrumbs-img" src="images/icons/chevrons_right.svg"  alt="Угловые скобки"></a>
               </li>
 
               <li class="breadcrumbs-item">
@@ -190,9 +184,9 @@
         <p class="catalog-filter-name">Сортировка:</p>
 
         <select class="select-control filter-element" aria-label="Сортировка" id="select">
-            <option value="popular">По популярности</option>
-            <option value="cheap">Сначала дешёвое</option>
-            <option value="expensive">Сначала дорогое</option>
+            <option value="popular">по популярности</option>
+            <option value="cheap">сначала дешёвое</option>
+            <option value="expensive">сначала дорогое</option>
         </select>
       </div>
 
@@ -201,10 +195,17 @@
         <div class="range-wrapper-inputs">
           <label class="catalog-filter-label">
             Цена:
-              <input class="range-input" type="number" value="100" name="min-price"> ₽
+              <label class="visually-hidden" for="min-price">Минимальная цена</label>
+              <input class="range-input" type="number" value="100" name="min-price" id="min-price"> ₽
           </label>
           <label class="catalog-filter-label">
-            – <input class="range-input" type="number" value="500" name="max-price" style="width: 37px"> ₽
+            –
+            <label class="visually-hidden" for="max-price">
+              Максимальная цена
+            </label>
+            <input class="range-input" type="number" value="500" name="max-price"  id="max-price" >
+
+             ₽
           </label>
         </div>
 
@@ -223,7 +224,7 @@
         </div>
       </fieldset>
       <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Жирность:</legend>
+          <legend class="catalog-filter-title catalog-fat">Жирность:</legend>
           <div class="filter-element">
 
           <label class="control">
@@ -254,8 +255,8 @@
       </fieldset>
 
       <fieldset class="catalog-filter-group ">
-        <legend class="catalog-filter-title catalog-filter-name">Наполнители:</legend>
-        <div class="filter-element">
+        <legend class="catalog-filter-title catalog-filter-name catalog-topping">Наполнители:</legend>
+        <div class="filter-element catalog-topping-element">
 
           <label class="control">
               <input class="control-input visually-hidden" type ="checkbox" name="chocolate" checked>
@@ -302,7 +303,7 @@
         </a>
         <p class="product-card-description">Сливочное мороженое с малиновым джемом</p>
         <b class="product-card-price">310 ₽/кг</b>
-        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a>
+        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart_light.svg" alt="Корзина"></a>
       </div>
     </li>
 
@@ -314,7 +315,7 @@
         </a>
         <p class="product-card-description">Фисташковый пломбир с кусочками шоколада</p>
         <b class="product-card-price">340 ₽/кг</b>
-        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a>
+        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart_light.svg" alt="Корзина"></a>
       </div>
     </li>
 
@@ -324,21 +325,21 @@
             <img class="product-card-image" height="168" width="168" src="images/products/Blueberry.png" alt="Мороженое черника">
             <h4 class="product-card-title">Черника</h4>
         </a>
-        <p class="product-card-description">Крем-брюле с черничным джемом</p>
+        <p class="product-card-description">Крем-брюле<br> с черничным джемом</p>
         <b class="product-card-price">330 ₽/кг</b>
-        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a>
+        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart_light.svg" alt="Корзина"></a>
       </div>
     </li>
 
     <li class="product-card">
       <div class="card-container">
         <a class="product-card-link" href="#">
-            <img class="product-card-image" height="168" width="168" src="images/products/Bubble-gum.png" alt="Мороженое Бабл-гам">
+            <img class="product-card-image" height="168" width="168" src="images/products/Bubble_gum.png" alt="Мороженое Бабл-гам">
             <h4 class="product-card-title">Бабл-гам</h4>
         </a>
-        <p class="product-card-description">Ванильный пломбир со сладкой посыпкой</p>
+        <p class="product-card-description">Ванильный пломбир<br> со сладкой посыпкой</p>
         <b class="product-card-price">320 ₽/кг</b>
-        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a>
+        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart_light.svg" alt="Корзина"></a>
       </div>
     </li>
 
@@ -350,7 +351,7 @@
         </a>
         <p class="product-card-description">Сливочное мороженое с ежевичным джемом</p>
         <b class="product-card-price">330 ₽/кг</b>
-        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a>
+        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart_light.svg" alt="Корзина"></a>
       </div>
     </li>
 
@@ -360,9 +361,9 @@
             <img class="product-card-image" height="168" width="168" src="images/products/Banana.png" alt="Мороженое банан">
             <h4 class="product-card-title">Банан</h4>
         </a>
-        <p class="product-card-description">Сливочный пломбир с банановым вкусом</p>
+        <p class="product-card-description">Сливочный пломбир <br>с банановым вкусом</p>
         <b class="product-card-price">340 ₽/кг</b>
-        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a>
+        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart_light.svg" alt="Корзина"></a>
       </div>
     </li>
 
@@ -374,7 +375,7 @@
         </a>
         <p class="product-card-description">Классический шоколадный пломбир</p>
         <b class="product-card-price">270 ₽/кг</b>
-        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a>
+        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart_light.svg" alt="Корзина"></a>
       </div>
     </li>
 
@@ -384,9 +385,9 @@
             <img class="product-card-image" height="168" width="168" src="images/products/Strawberry.png" alt="Мороженое клубничка">
             <h4 class="product-card-title">Клубничка</h4>
         </a>
-        <p class="product-card-description">Сливочный пломбир с клубничным вкусом</p>
+        <p class="product-card-description">Сливочный пломбир<br> с клубничным вкусом</p>
         <b class="product-card-price">300 ₽/кг</b>
-        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a>
+        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart_light.svg" alt="Корзина"></a>
       </div>
     </li>
 
@@ -398,7 +399,7 @@
         </a>
         <p class="product-card-description">Освежающий лимонный сорбет</p>
         <b class="product-card-price">310 ₽/кг</b>
-        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a>
+        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart_light.svg" alt="Корзина"></a>
       </div>
     </li>
 
@@ -408,9 +409,9 @@
             <img class="product-card-image" height="168" width="168" src="images/products/Menthol.png" alt="Мороженое ментол">
             <h4 class="product-card-title">Ментол</h4>
         </a>
-        <p class="product-card-description">Сливочный пломбир с ментоловым сиропом</p>
+        <p class="product-card-description">Сливочный пломбир<br> с ментоловым сиропом</p>
         <b class="product-card-price">320 ₽/кг</b>
-        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a>
+        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart_light.svg" alt="Корзина"></a>
       </div>
     </li>
 
@@ -420,21 +421,21 @@
             <img class="product-card-image" height="168" width="168" src="images/products/Nut.png" alt="Мороженое орешек">
             <h4 class="product-card-title">Орешек</h4>
         </a>
-        <p class="product-card-description">Фисташковый пломбир с шоколадным сиропом</p>
+        <p class="product-card-description">Фисташковый пломбир<br> с шоколадным сиропом</p>
         <b class="product-card-price">360 ₽/кг</b>
-        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a>
+        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart_light.svg" alt="Корзина"></a>
       </div>
     </li>
 
     <li class="product-card">
       <div class="card-container">
         <a class="product-card-link" href="#">
-            <img class="product-card-image" height="168" width="168" src="images/products/Creme-brulee.png" alt="Мороженое крем-брюле">
+            <img class="product-card-image" height="168" width="168" src="images/products/Creme_brulee.png" alt="Мороженое крем-брюле">
             <h4 class="product-card-title">Крем-брюле</h4>
         </a>
-        <p class="product-card-description">Классическое крем-брюле</p>
+        <p class="product-card-description">Классическое <br>крем-брюле</p>
         <b class="product-card-price">280 ₽/кг</b>
-        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart-light.svg" alt="Корзина"></a>
+        <a class="button-add-to-shopping-cart" href="#"><span class="visually-hidden">Корзина</span><img src="images/icons/cart_light.svg" alt="Корзина"></a>
       </div>
     </li>
 
@@ -448,7 +449,7 @@
       <li >
         <a class="pagination-link disabled" href="#" >
           <span class="visually-hidden">Предыдущая страница</span>
-          <img src="images/slider/Arrow-left-dark.svg" alt="Предыдущая страница" >
+          <img src="images/slider/Arrow_left_dark.svg" alt="Предыдущая страница" >
         </a>
       </li>
 
@@ -480,7 +481,7 @@
       <li >
         <a href="#">
           <span class="visually-hidden">Следующая страница</span>
-          <img src="images/slider/Arrow-right-dark.svg" class="pagination-arrow-right" alt="Следующая страница" >
+          <img src="images/slider/Arrow_right_dark.svg" class="pagination-arrow-right" alt="Следующая страница" >
         </a>
       </li>
 
@@ -569,5 +570,3 @@
     </footer>
   </body>
 </html>
-
-
